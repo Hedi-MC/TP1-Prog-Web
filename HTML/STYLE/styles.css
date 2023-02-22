@@ -16,12 +16,39 @@
     
 }
 
-.menuSMALL{
+
+
+.grandContainer
+{
+
+
+
+
+}
+
+.mainImages{
     color: orange;
     border-color: blue;
     border: 2px solid;
     overflow: hidden;
+    max-height: 90vh;
+    max-width: 90vw;
+    width: 80%; display: block; margin:auto;text-align: center;
+    
+}
+.menuSMALL{
+    color: red;
+    border-color: blue;
+    border: 2px solid;
+    overflow: hidden;
     font-size: 20px;
+}
+.mainSubject{
+    color: red;
+    border-color: blue;
+    border: 2px solid;
+    overflow: hidden;
+    
 }
 
 .logo {
