@@ -78,7 +78,7 @@ html{
 
   a:link {
     text-decoration: none;
-    color: rgb(255, 0, 0);
+    color: rgba(185, 213, 255, 0.897);
   }
   
   a:visited {
