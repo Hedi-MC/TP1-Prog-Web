@@ -4,17 +4,19 @@
 }
 
 .menu{
-    color: white;
-    border-color: blue;
-    border: 2px solid;
-    overflow: hidden;
-    font-size: 20px;
-    max-width: 200px;
     
-    
-    
-    
+  overflow: hidden;
+  font-size: 20px;
+  max-width: 200px;
 }
+.menuSMALL{
+  
+  border-color: blue;
+  text-align: center;
+  overflow: hidden;
+  font-size: 20px;
+}
+
 
 .corpMain
 {
@@ -48,13 +50,8 @@ margin-top: 50px;
     width: 80%; display: block; margin:auto;text-align: center;
     
 }
-.menuSMALL{
-    color: rgb(255, 255, 255);
-    border-color: blue;
-    border: 2px solid;
-    overflow: hidden;
-    font-size: 20px;
-}
+
+
 .mainSubject{
     color: rgb(255, 255, 255);
     border-color: blue;

@@ -1,214 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <!--BOOTSTRAP CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!--MA STYLESHEET-->
-    <link rel="stylesheet" href="STYLE/stylesRecherche.css">
-    
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!--BOOTSTRAP CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!--MA STYLESHEET-->
+  <link rel="stylesheet" href="STYLE/stylesRecherche.css">
+
+
 </head>
+
 <body class="corpMain">
-  <div class="">
+  <header>
     <!---->
-    <div class="row justify-content-end " style="background-color: rgba(0,0,0,.7); margin-right: 1px;"> <!--Barre du haut-->
-      <div class=" col" >
-        <a href="Home.html"><img src="IMAGES\logo.png" alt="logo temp" class="logo menu d-none d-sm-block " style="margin-left: 50px; border:0px" ></a>
-        <a href="Home.html"><img src="IMAGES\logo.png" alt="logo temp" class="logo menu d-block d-sm-none mx-auto"  >    </a>
+    <div class="row justify-content-end " style="background-color: rgba(0,0,0,.7); margin-right: 1px;">
+      <!--Barre du haut-->
+      <div class="col-auto d-none d-md-block" style=" margin-left: 50px">
+        <a href="Home.html"><img src="IMAGES/logo.png" alt="logo temp" class="logo menu d-none d-md-block "
+            style=" border:0px"> </a>
+
+
       </div>
-      
-      <div class="d-none d-sm-block col-md-2 col-sm-2 text-center menu align-self-center">  <!--Bouton Accueil-->
-        Accueil
+      <div class="col d-block d-md-none">
+        <a href="Home.html"><img src="IMAGES/logo.png" alt="logo temp" class="logo menu d-block d-md-none mx-auto"></a>
       </div>
-      
-      <div class="d-none d-sm-block col-md-3 col-sm-3 text-center menu align-self-center w-md-50"> <!-- Bouton Recherche-->
-        Recherche
+      <div class="col d-none d-md-block" style="">
+
       </div>
-      <div class="d-none d-sm-block col-md-2 col-sm-2 text-center menu align-self-center" style="margin-right: 50px;"> <!--Bouton Favoris-->
-        Favoris
+
+      <div class="d-none d-md-block col-md-2 col-sm-2 text-center menu align-self-center"> <!--Bouton Accueil-->
+        <a class="btn btn-outline-light btn-lg w-100" href="Home.html" role="button">Accueil</a>
+      </div>
+
+      <div class="d-none d-md-block col-md-3 col-sm-3 text-center menu align-self-center w-md-50">
+        <!-- Bouton Recherche-->
+        <a class="btn btn-outline-light w-100 btn-lg" href="Recherche.html" role="button">Recherche</a>
+      </div>
+      <div class="d-none d-md-block col-md-3 col-sm-3 text-center menu align-self-center" style="margin-right: 50px;">
+        <!--Bouton Favoris-->
+        <a class="btn btn-outline-light w-100 btn-lg" href="Favoris.html" role="button">Favoris</a>
+      </div>
+      <!--SMALL-->
+      <div class="container-fluid">
+        <div class="d-md-none d-block row text-center menuSMALL align-self-center"> <!--Bouton Accueil PETIT-->
+          <a class="btn btn-outline-light btn-lg w-100" href="Home.html" role="button">Accueil</a>
+        </div>
+        <div class="d-md-none d-block row text-center menuSMALL align-self-center w-md-50">
+          <!--Bouton Recherche PETIT-->
+          <a class="btn btn-outline-light w-100 btn-lg" href="Recherche.html" role="button">Recherche</a>
+        </div>
+        <div class="d-md-none d-block row text-center menuSMALL align-self-center"> <!--Bouton Favoris PETIT-->
+          <a class="btn btn-outline-light w-100 btn-lg" href="Favoris.html" role="button">Favoris</a>
+        </div>
       </div>
 
 
 
 
-      <div class="d-sm-none d-block col-md-2 col-sm-2 text-center menuSMALL align-self-center"> <!--Bouton Accueil PETIT-->
-        Accueil
-      </div>
-      <div class="d-sm-none d-block col-md-2 col-sm-2 text-center menuSMALL align-self-center w-md-50"> <!--Bouton Recherche PETIT-->
-        Recherche
-      </div>
-      <div class="d-sm-none d-block col-md-2 col-sm-2 text-center menuSMALL align-self-center"> <!--Bouton Favoris PETIT-->
-        Favoris
-      </div>
     </div>
-  </div>  
- 
- 
-  <div class="container-fluid grandContainer mw-50 overflow-hidden" style="background-color: rgba(0,0,0,.7); "> <!--Fond sujets principaux-->
+  </header>
 
-    <h1>Les Classes</h1> <!--Titre Principal-->
 
-  <div class="container-fluid overflow-hidden" style="border: 50px; border-color: brown;">
-    <div class="row">
-      
-      
-      <div class="col-md mainSubject p-2 ">
-        
-        <h1 style="margin-left: 15px;">Illusion</h1>
-        <img src="IMAGES\temp.JPG" alt="Le Mage" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-    
-      </div>
-      
 
-      <div class="col-md mainSubject p-2 ">
-        <h1 style="margin-left: 15px;" >Conjuration</h1>
-        <img src="IMAGES\temp.JPG" alt="Le Combatant" class="col mainImages" style="width: 90%;"> <!--Guerrier-->
-        
-      </div>
-
-      <div class="col-md mainSubject p-2 ">
-        <h1 style="margin-left: 15px;">Destruction</h1>
-        <img src="IMAGES\temp.JPG" alt="Le Voleur" class="col mainImages " style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
-        
-        
-      </div>
-      
-      
-      
-    </div>
-    <div class="row">
-        <div class="col-md mainSubject p-2 ">
-          <h1 style="margin-left: 15px;">Restoration</h1>
-          <img src="IMAGES\temp.JPG" alt="Le Mage" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-          
-        </div>
-        
   
-        <div class="col-md mainSubject p-2 ">
-          <h1 style="margin-left: 15px;" >Altération</h1>
-          <img src="IMAGES\temp.JPG" alt="Le Combatant" class="col mainImages" style="width: 90%;"> <!--Guerrier-->
+    <main class="container-fluid grandContainer mw-50 overflow-hidden" style="background-color: rgba(0,0,0,.7); ">
+      <!--Fond sujets principaux-->
+
+      <h1>Les Classes</h1> <!--Titre Principal-->
+      <div class="row justify-content-end">
+
+
+        <div class="col-md-2 h-auto colRecherche d-block d-md-none ">
+
+          <h2 class="recherche" style="padding-top: 50px; padding-left: 10px;">
+            RECHERCHER
+          </h2>
+          <form action="https://www.w3schools.com/action_page.php" method="POST">
+            <input type="text">
+            <h4 class="recherche" style="padding-top: 50px; width: 100%; ">Nombre de compétences</h4>
+            <input type="number" style="max-width: 40%; "> <input type="number" class="text-end"
+              style="max-width: 40%; margin-left: auto;">
+
+            <h4 class="recherche" style="padding-top: 50px; ">habileté vedette</h4>
+            <select id="choix" name="choix de l'habileté" style="width: 100%;">
+              <option value="either">Peu importe</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+            <h4 class="recherche" style="padding-top: 50px; ">Classe</h4>
+            <input type="radio" id="mage" name="classe" value="mage">
+            <label for="mage">
+              Mage
+            </label><br>
+            <input type="radio" id="fighter" name="classe" value="guerrier">
+            <label for="fighter">
+              Guerrier
+            </label><br>
+            <input type="radio" id="thief" name="classe" value="voleur">
+            <label for="thief">
+              Voleur
+            </label>
+            <br>
+            <div class="d-md-none d-xxl-block">
+              <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <button
+                type="submit" class="bouton"
+                style="margin-left: 50px; background-color: cornflowerblue;"> Rechercher</button>
+            </div>
           
-        </div>
-  
-        <div class="col-md mainSubject p-2 ">
-          <h1 style="margin-left: 15px;">Enchantement</h1>
-          <img src="IMAGES\temp.JPG" alt="Le Voleur" class="col mainImages " style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
-          
+
+
+          </form>
+
+
           
         </div>
 
-            
+        <div class="col-md-9 overflow-hidden" style="border: 50px; background-color: rgba(2, 3, 5, 0.507);">
+          <div class="row">
 
-        <div class="row">
-            <div class="col-md mainSubject p-2 ">
-              <h1 style="margin-left: 15px;">Forgeage</h1>
-              <img src="IMAGES\temp.JPG" alt="Le Mage" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-             
+
+            <div class="col-md mainSubject p-2 mage">
+
+              <a href="Detail.html">
+                <h1 style="margin-left: 15px;">Illusion</h1>
+
+                <div class="img-text-container">
+                  <img src="https://static.wikia.nocookie.net/elderscrolls/images/e/e6/SkillIllusion.png" alt="Le Mage"
+                    class="col mainImages mageImg" style="width: 90%;">
+
+                </div>
+              </a> <!--MAGE-->
+
+
             </div>
-            
-      
-            <div class="col-md mainSubject p-2 ">
-              <h1 style="margin-left: 15px;" >Armure Lourde</h1>
-              <img src="IMAGES\temp.JPG" alt="Le Combatant" class="col mainImages" style="width: 90%;"> <!--Guerrier-->
-              
+
+
+            <div class="col-md mainSubject p-2 mage">
+              <a href="Detail.html">
+                <h1 style="margin-left: 15px;">Conjuration</h1>
+
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/2/2c/SkillConjuration.png/"
+                  alt="Le Combatant" class="col mainImages mageImg" style="width: 90%;">
+              </a>
+              <!--Guerrier-->
+
             </div>
-      
-            <div class="col-md mainSubject p-2 ">
-              <h1 style="margin-left: 15px;">Bloque</h1>
-              <img src="IMAGES\temp.JPG" alt="Le Voleur" class="col mainImages " style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
-              
-              
+
+            <div class="col-md mainSubject p-2 mage">
+              <a href="Detail.html">
+                <h1 style="margin-left: 15px;">Destruction</h1>
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/f4/SkillDestruction.png"
+                  alt="Le Voleur" class="col mainImages mageImg "
+                  style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
+              </a>
+
             </div>
-            
-            
-            
+
+
+
           </div>
           <div class="row">
-              <div class="col-md mainSubject p-2 ">
-                <h1 style="margin-left: 15px;">Deux Mains</h1>
-                <img src="IMAGES\temp.JPG" alt="Le Mage" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-                
+            <div class="col-md mainSubject p-2 mage">
+              <a href="Detail.html">
+                <h1 style="margin-left: 15px;">Restoration</h1>
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/7/76/SkillRestoration.png/"
+                  alt="Le Mage" class="col mainImages mageImg" style="width: 90%;"> <!--MAGE-->
+
+
+              </a>
+            </div>
+
+
+            <div class="col-md mainSubject p-2 mage">
+              <a href="Detail.html">
+                <h1 style="margin-left: 15px;">Altération</h1>
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/b/ba/SkillAlteration.png"
+                  alt="Le Combatant" class="col mainImages mageImg" style="width: 90%;">
+                <!--Guerrier-->
+              </a>
+            </div>
+
+            <div class="col-md mainSubject p-2 mage">
+              <a href="Detail.html">
+                <h1 style="margin-left: 15px;">Enchantement</h1>
+                <img src="https://static.wikia.nocookie.net/elderscrolls/images/c/ce/SkillEnchanting.png/"
+                  alt="Le Voleur" class="col mainImages mageImg "
+                  style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
+
+              </a>
+            </div>
+
+
+
+            <div class="row">
+              <div class="col-md mainSubject p-2 guerrier">
+                <a href="Detail.html">
+                  <h1 style="margin-left: 15px;">Forgeage</h1>
+                  <img src="https://static.wikia.nocookie.net/elderscrolls/images/2/2b/SkillSmithing.png/" alt="Le Mage"
+                    class="col mainImages guerrierImg" style="width: 90%;">
+                  <!--MAGE-->
+                </a>
               </div>
-              
-        
-              <div class="col-md mainSubject p-2 ">
-                <h1 style="margin-left: 15px;" >Une Main</h1>
-                <img src="IMAGES\temp.JPG" alt="Le Combatant" class="col mainImages" style="width: 90%;"> <!--Guerrier-->
-                
+
+
+              <div class="col-md mainSubject p-2 guerrier">
+                <a href="Detail.html">
+                  <h1 style="margin-left: 15px;">Armure Lourde</h1>
+                  <img src="https://static.wikia.nocookie.net/elderscrolls/images/b/b7/SkillHeavyarmor.png"
+                    alt="Le Combatant" class="col mainImages guerrierImg" style="width: 90%;">
+                  <!--Guerrier-->
+                </a>
               </div>
-        
-              <div class="col-md mainSubject p-2 ">
-                <h1 style="margin-left: 15px;">Archerie</h1>
-                <img src="IMAGES\temp.JPG" alt="Le Voleur" class="col mainImages " style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
-                
-                
+
+              <div class="col-md mainSubject p-2 guerrier">
+                <a href="Detail.html">
+                  <h1 style="margin-left: 15px;">Bloque</h1>
+                  <img src="https://static.wikia.nocookie.net/elderscrolls/images/c/c7/SkillBlock.png/" alt="Le Voleur"
+                    class="col mainImages guerrierImg"
+                    style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
+                </a>
+
+              </div>
+
+
+
+            </div>
+            <div class="row">
+              <div class="col-md mainSubject p-2 guerrier">
+                <a href="Detail.html">
+                  <h1 style="margin-left: 15px;">Deux Mains</h1>
+                  <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/fa/SkillTwohanded.png/"
+                    alt="Le Mage" class="col mainImages guerrierImg" style="width: 90%;">
+                  <!--MAGE-->
+                </a>
+              </div>
+
+
+              <div class="col-md mainSubject p-2 guerrier">
+                <a href="Detail.html">
+                  <h1 style="margin-left: 15px;">Une Main</h1>
+                  <img src="https://static.wikia.nocookie.net/elderscrolls/images/b/b5/SkillOnehanded.png/"
+                    alt="Le Combatant" class="col mainImages guerrierImg" style="width: 90%;">
+                  <!--Guerrier-->
+                </a>
+              </div>
+
+              <div class="col-md mainSubject p-2 guerrier">
+                <a href="Detail.html">
+                  <h1 style="margin-left: 15px;">Archerie</h1>
+                  <img src="https://static.wikia.nocookie.net/elderscrolls/images/f/fa/SkillArchery.png/"
+                    alt="Le Voleur" class="col mainImages guerrierImg"
+                    style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
+                </a>
+
               </div>
 
               <div class="row">
-                <div class="col-md mainSubject p-2 ">
-                  <h1 style="margin-left: 15px; font-size: 224%;">Armure Légère</h1>
-                  <img src="IMAGES\temp.JPG" alt="Le Mage" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-                 
+                <div class="col-md mainSubject p-2 voleur">
+                  <a href="Detail.html">
+                    <h1 style="margin-left: 15px; font-size: 224%;">Armure Légère</h1>
+                    <img src="https://static.wikia.nocookie.net/elderscrolls/images/2/2d/SkillLightarmor.png/"
+                      alt="Le Mage" class="col mainImages voleurImg" style="width: 90%;">
+                    <!--MAGE-->
+                  </a>
                 </div>
-                
-          
-                <div class="col-md mainSubject p-2 ">
-                  <h1 style="margin-left: 15px;" >Furtivité</h1>
-                  <img src="IMAGES\temp.JPG" alt="Le Combatant" class="col mainImages" style="width: 90%;"> <!--Guerrier-->
-                  
+
+
+                <div class="col-md mainSubject p-2 voleur">
+                  <a href="Detail.html">
+                    <h1 style="margin-left: 15px;">Furtivité</h1>
+                    <img src="https://static.wikia.nocookie.net/elderscrolls/images/8/82/SkillSneak.png/"
+                      alt="Le Combatant" class="col mainImages voleurImg" style="width: 90%;">
+                    <!--Guerrier-->
+                  </a>
                 </div>
-          
-                <div class="col-md mainSubject p-2 ">
-                  <h1 style="margin-left: 15px;">Crochetage</h1>
-                  <img src="IMAGES\temp.JPG" alt="Le Voleur" class="col mainImages " style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
-                  
-                  
+
+                <div class="col-md mainSubject p-2 voleur">
+                  <a href="Detail.html">
+                    <h1 style="margin-left: 15px;">Crochetage</h1>
+                    <img src="https://static.wikia.nocookie.net/elderscrolls/images/3/3d/SkillLockpicking.png/"
+                      alt="Le Voleur" class="col mainImages voleurImg"
+                      style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
+
+                  </a>
                 </div>
-                
-                
-                
+
+
+
               </div>
               <div class="row">
-                  <div class="col-md mainSubject p-2 ">
+                <div class="col-md mainSubject p-2 voleur">
+                  <a href="Detail.html">
                     <h1 style="margin-left: 15px;">Vol</h1>
-                    <img src="IMAGES\temp.JPG" alt="Le Mage" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-                    
-                  </div>
-                  
-            
-                  <div class="col-md mainSubject p-2 ">
-                    <h1 style="margin-left: 15px;" >Éloquence</h1>
-                    <img src="IMAGES\temp.JPG" alt="Le Combatant" class="col mainImages" style="width: 90%;"> <!--Guerrier-->
-                    
-                  </div>
-            
-                  <div class="col-md mainSubject p-2 ">
+                    <img src="https://static.wikia.nocookie.net/elderscrolls/images/a/a8/SkillPickpocket.png"
+                      alt="Le Mage" class="col mainImages voleurImg" style="width: 90%;">
+                    <!--MAGE-->
+                  </a>
+                </div>
+
+
+                <div class="col-md mainSubject p-2 voleur">
+                  <a href="Detail.html">
+                    <h1 style="margin-left: 15px;">Éloquence</h1>
+                    <img src="https://static.wikia.nocookie.net/elderscrolls/images/1/18/SkillSpeech.png"
+                      alt="Le Combatant" class="col mainImages voleurImg" style="width: 90%;">
+                    <!--Guerrier-->
+                  </a>
+                </div>
+
+                <div class="col-md mainSubject p-2 voleur">
+                  <a href="Detail.html">
                     <h1 style="margin-left: 15px;">Alchimie</h1>
-                    <img src="IMAGES\temp.JPG" alt="Le Voleur" class="col mainImages " style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
-                    
-                    
-                  </div>
-        
-        
-        
+                    <img src="https://static.wikia.nocookie.net/elderscrolls/images/b/b9/SkillAlchemy.png"
+                      alt="Le Voleur" class="col mainImages voleurImg"
+                      style="width: 90%; display: block; margin:auto;text-align: center;"> <!--Voleur-->
+                  </a>
+
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="col-md-2 h-auto colRecherche d-none d-md-block ">
+
+          <h2 class="recherche" style="padding-top: 50px; padding-left: 10px;">
+            RECHERCHER
+          </h2>
+          <form action="https://www.w3schools.com/action_page.php" method="POST">
+            <input type="text">
+            <h4 class="recherche" style="padding-top: 50px; width: 100%; ">Nombre de compétences</h4>
+            <input type="number" style="max-width: 40%; "> <input type="number" class="text-end"
+              style="max-width: 40%; margin-left: auto;">
+
+            <h4 class="recherche" style="padding-top: 50px; ">habileté vedette</h4>
+            <select id="choixBig" name="choix de l'habileté" style="width: 100%;">
+              <option value="either">Peu importe</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+            <h4 class="recherche" style="padding-top: 50px; ">Classe</h4>
+            <input type="radio" id="mageBig" name="classe" value="mage">
+            <label for="mage">
+              Mage
+            </label><br>
+            <input type="radio" id="fighterBig" name="classe" value="guerrier">
+            <label for="fighter">
+              Guerrier
+            </label><br>
+            <input type="radio" id="thiefBig" name="classe" value="voleur">
+            <label for="thief">
+              Voleur
+            </label>
+            <br>
+            <div class="d-md-none d-xxl-block">
+              <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <button
+                type="submit" class="bouton"
+                style="margin-left: 50px; background-color: cornflowerblue; "> Rechercher</button>
+            </div>
+            <div class=" d-md-block d-xxl-none">
+              <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <br>
+              <button type="submit" class="bouton" style=" background-color: cornflowerblue;"> Rechercher</button>
+            </div>
+
+
+          </form>
+
+        </div>
+
       </div>
-    </div>  
-  </div>
-
-  </div>
-  
-
-
-
-    
-
-   
+    </main>
 
 
 
@@ -217,8 +388,16 @@
 
 
 
+
+
+
+
+
+
+    <footer>
     <!--BOOTSTRAP JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
 </body>
 
 </html>
