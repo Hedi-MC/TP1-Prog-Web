@@ -1,0 +1,8 @@
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.csproj.AssemblyReference.cache
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.AssemblyInfoInputs.cache
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.AssemblyInfo.cs
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.csproj.CoreCompileInputs.cache
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.RazorAssemblyInfo.cache
+C:\Users\2030719\Desktop\TP1-Prog-Web\obj\Debug\net6.0\TP2-Skyrim.RazorAssemblyInfo.cs

@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim\\TP2-Skyrim.csproj",
+      "projectUniqueName": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj",
       "projectName": "TP2-Skyrim",
-      "projectPath": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim\\TP2-Skyrim.csproj",
+      "projectPath": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj",
       "packagesPath": "C:\\Users\\2030719\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim\\obj\\",
+      "outputPath": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
