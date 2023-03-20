@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tp2 Prog Web", "Tp2 Prog Web\Tp2 Prog Web.csproj", "{99256143-1099-4CA9-8A85-9DA8722E22DA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TP2-Skyrim", "TP2-Skyrim.csproj", "{C59A5341-F683-4CB4-BC92-2F1338B6E471}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{99256143-1099-4CA9-8A85-9DA8722E22DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{99256143-1099-4CA9-8A85-9DA8722E22DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{99256143-1099-4CA9-8A85-9DA8722E22DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{99256143-1099-4CA9-8A85-9DA8722E22DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C59A5341-F683-4CB4-BC92-2F1338B6E471}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C59A5341-F683-4CB4-BC92-2F1338B6E471}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C59A5341-F683-4CB4-BC92-2F1338B6E471}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C59A5341-F683-4CB4-BC92-2F1338B6E471}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {89F87A57-D809-479C-800E-4419DA6BC0D1}
+		SolutionGuid = {CC0C53F1-9874-4C94-86AB-E38B043FCDD7}
 	EndGlobalSection
 EndGlobal
