@@ -7,8 +7,4 @@
     <RootNamespace>TP2_Skyrim</RootNamespace>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
 </Project>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "axcWP/RFU4ZFkOo4ZW/V+7gaPk3yCOfgph2lMhc07GE=",
+  "Hash": "iLlJT8n9D4uvsz2IdORIGxNgq6kCAkshzh4fb/gSAl0=",
   "Source": "TP2-Skyrim",
   "BasePath": "_content/TP2-Skyrim",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\stylesFavoris.css"
+    },
+    {
+      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesLayout.css",
+      "SourceId": "TP2-Skyrim",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "BasePath": "_content/TP2-Skyrim",
+      "RelativePath": "css/stylesLayout.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\stylesLayout.css"
     },
     {
       "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesMAIN.css",
