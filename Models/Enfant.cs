@@ -18,7 +18,7 @@
         
         public String UtilGen { get; set; }
 
-        public String Type { get; set; }
+        public String TypeAbilite { get; set; }
 
         public int NiveauDeRecommendation { get; set; }
 

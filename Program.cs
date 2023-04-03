@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Builder;
+using TP2_Skyrim.Models;
 
 var builder = WebApplication.CreateBuilder(args); // Crée une web app avec les paramètres envoyés
 builder.Services.AddControllersWithViews(); // Permet MVC
