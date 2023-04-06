@@ -1,9 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using TP2_Skyrim.Models;
 
 namespace TP2_Skyrim.Controllers
 {
     public class HomeController : Controller
     {
+        private Database DB { get; set; }
+
+        public HomeController(Database db) { this.DB = db; }
         public IActionResult Index()
         {
             return View();

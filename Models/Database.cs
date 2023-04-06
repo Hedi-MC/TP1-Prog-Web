@@ -389,7 +389,17 @@
                 Difficulté = 4
             });
 
-
+            //Liaison objets Enfants aux Objets Parent
+            foreach (var p in Parents)
+            {
+                p.Enfants = new List<Enfant>();
+                p.Enfants.AddRange(Enfants.Where(e => e.ParentId == p.ParentId));
+            }
+            //Liaison objets Parents aux Objets Enfants
+            foreach (var e in Enfants)
+            {
+                e.Parent = Parents.Where(p => p.ParentId == e.ParentId).Single();
+            }
 
         }
 
