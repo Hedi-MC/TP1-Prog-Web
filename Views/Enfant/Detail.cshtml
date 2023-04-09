@@ -1,10 +1,216 @@
-﻿@*
+﻿@using TP2_Skyrim.Models
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
     Layout = "_Layout";
 }
 
-<main>
-    <p>Une texte très temporaire. DETAIL ENFANT</p>
+<main class="container-fluid grandContainer mw-50 overflow-auto  h-auto"
+      style="background-color: rgba(0,0,0,.7); margin-bottom: 50px; ">
+    <!--Fond sujets principaux-->
+    @Enfants enfant=ViewData["Enfants"]
+    <h1>Détails de l'habileté</h1> <!--Titre Principal-->
+
+    <div class="container-fluid  " style="border: 50px; border-color: brown; height: 100%;">
+
+        <div class="row colonnes ligne overflow-hidden   ">
+            <div class="col-md-7 col-lg-5 col-xl-4 detailBG">
+
+
+
+                <div id="carouselExample" class="carousel slide  " style="border: 2px; height: 100%; width: 100%;">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" style=" ">
+                            <div class="d-flex justify-content-center w-100">
+                                <img src="https://images.uesp.net/e/ea/SR-skill-Lockpicking.png" class=""
+                                     style="height:400px; text-align: center;" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item " style=" ">
+                            <div class="d-flex justify-content-center w-100">
+                                <img src="IMAGES/crochetage.jpg" class="detailImage"
+                                     style="height:400px; text-align: center; border-radius: 10px;"
+                                     alt="Image du crochetage dans le jeu">
+                            </div>
+                        </div>
+                        <div class="carousel-item " style=" ">
+                            <div class="d-flex justify-content-center w-100">
+                                <img src="https://images.uesp.net/7/71/LG-cardart-Thieves_Guild_Recruit.png" class="detailImage"
+                                     style="height:400px; text-align: center; border-radius: 10px;"
+                                     alt="Un argonien qui crochette une porte">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+            <div class="col-auto d-md-none d-lg-block colonnes texte h-100 ">
+                <p>Nom de L'habileté:</p>
+                <p>Classe:</p>
+                <p>Type d'habileté:</p>
+                <p>Nombre de compétences:</p>
+                <p>Utilitée générale:</p>
+                <p>Niveau de recommendation:</p>
+                <p>Difficulté:</p>
+            </div>
+
+
+            <div class="col-auto d-md-none d-lg-block colonnes texte h-100  thiefText">
+                <p></p> <!--Donner un input à ces dudes là-->
+                <p>Voleur</p>
+                <p>Utilité</p>
+                <p>11 compétences</p>
+                <p>Utile pour tous</p>
+                <p>3/10</p>
+                <p>1/10</p>
+
+
+            </div>
+
+            <div class="col-auto d-block d-lg-none colonnes texte h-100 " style="font-size: 120% ">
+                <p>Nom de L'habileté:</p>
+                <p class="thiefText">Crochetage</p>
+                <p>Classe:</p>
+                <p class="thiefText">Voleur</p>
+                <p>Type d'habileté:</p>
+                <p class="thiefText">Utilité</p>
+                <p>Nombre de compétences:</p>
+                <p class="thiefText">11 compétences</p>
+                <p>Utilitée générale:</p>
+                <p class="thiefText">Utile pour tous</p>
+            </div>
+
+
+            <div class="col-auto d-block d-lg-none colonnes texte h-100  thiefText">
+                <!--Donner un input à ces dudes là-->
+
+
+
+
+
+
+
+            </div>
+
+
+
+
+        </div>
+        <div class="row colonnes" style="width: 200px;">
+            <form action="https://www.w3schools.com/action_page.php" method="POST">
+                <input type="hidden" id="crochetage" name="crochetage" value="SR-skill-Lockpicking.png">
+                <button type="submit" style="background-color: cornflowerblue; color: white; font-size: xx-large;">
+                    Favoris +
+                </button>
+            </form>
+
+
+
+        </div>
+        <h3>Description</h3>
+        <p style="height: 60ch;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae quae vel unde placeat?
+            Nobis deleniti cupiditate eveniet. Magni, hic. Obcaecati minima necessitatibus quisquam velit natus voluptatum
+            illo magnam, temporibus aspernatur eveniet dicta iste culpa odio recusandae vero voluptatibus exercitationem!
+            Nisi fuga unde consequuntur laudantium quasi accusamus ipsam aperiam. Cumque assumenda fugiat quidem cum nobis
+            distinctio in possimus numquam voluptatibus laudantium, tempora et consectetur dolores sapiente obcaecati quas
+            molestias, illo consequatur accusantium! Iusto ducimus voluptate maxime sequi consectetur mollitia quo aliquam
+            molestias quasi vero suscipit ullam, quam deleniti. Esse possimus aspernatur nemo vero incidunt quae ullam
+            dolore, at assumenda mollitia tempora aliquid quis corrupti labore dolores iusto corporis est veritatis sit
+            magni cum eaque inventore? Architecto cumque in aliquid modi quaerat praesentium sed deserunt possimus amet
+            excepturi eligendi eveniet quod numquam, eius consequuntur? In, debitis. Mollitia saepe minus nihil
+            reprehenderit amet impedit rem eveniet laborum maxime assumenda id quaerat sunt explicabo, ea dolorum dolore
+            deleniti? Eos, fuga mollitia! Esse animi aspernatur porro. Alias omnis itaque veniam eum fuga at molestiae
+            veritatis reprehenderit deleniti, eveniet officia sunt perferendis id quos debitis, rem molestias ea, tempora
+            fugiat? Aliquid amet labore blanditiis eligendi nam dolore veniam ratione culpa suscipit nihil ipsa rerum
+            debitis nisi expedita dolorum, praesentium sit sed sint reprehenderit a facere? Voluptatem voluptatum aliquid
+            quod architecto officiis repellat consectetur nesciunt sit quam, quis obcaecati expedita qui impedit non fugit
+            cumque laudantium ad dignissimos pariatur placeat possimus eveniet quia facere. Adipisci porro laboriosam
+            magni
+            ullam asperiores veniam nihil nam? Blanditiis laudantium dignissimos hic, deserunt magnam fugit rem similique
+            quaerat ratione, neque odit vitae totam autem. Nam blanditiis repellendus odio voluptatum sed adipisci
+            distinctio excepturi quam magni pariatur dolorum nostrum quasi quidem laboriosam id libero doloremque, error
+            animi minima non. Natus fuga quae distinctio iusto neque tenetur laudantium reiciendis velit veniam obcaecati
+            ut
+            dolore ullam, a aliquam voluptatibus mollitia qui rerum illum libero ipsam, molestias animi ratione, quidem
+            hic.
+            Recusandae quo hic similique molestiae? Sequi repellat hic ut. Accusamus porro ducimus impedit. Est ratione
+            error dolore ut magni laboriosam, distinctio cum, autem cumque, quis itaque. Earum neque similique quis fugit
+            cumque expedita libero nulla repellat, dolor temporibus tenetur sed, est eligendi porro autem labore quod quo
+            inventore quidem consequuntur sint cupiditate? Eveniet aspernatur repellendus nobis saepe assumenda, quibusdam
+            cupiditate beatae quis consequatur enim, maxime omnis commodi itaque vel dolorum iure blanditiis ab quo animi
+            dignissimos, soluta optio labore. Cumque adipisci porro provident maxime alias sequi nulla veritatis!
+            Architecto
+            maxime nam ullam quisquam provident blanditiis expedita alias voluptas sed debitis ipsa omnis praesentium
+            iusto,
+            porro saepe enim repellat? Culpa distinctio asperiores nobis maxime sit sed dolor quas quidem. Ad tempore et
+            ipsa veniam molestiae ex, ipsum inventore incidunt voluptatibus id laboriosam voluptas temporibus quo
+            assumenda
+            aperiam iure minima nulla repellendus officia eveniet! Dolorem sit eum architecto, sequi sed vel qui dolore
+            laborum quidem assumenda labore ipsum est? Incidunt debitis, odio corrupti saepe culpa sed a odit id delectus
+            sint, rem nemo repudiandae commodi. Dolores nemo fugiat cum vel, unde optio cumque nam sunt id ratione dolore
+            odio magnam pariatur quasi hic laborum iure consequatur autem corrupti ut, fuga consectetur alias possimus! Et
+            minima eius fugiat cum ducimus dignissimos ab, architecto magni dolorum, totam voluptates corrupti, modi
+            temporibus laborum voluptate aut necessitatibus veniam ea voluptatem repellat molestiae amet suscipit
+            explicabo?
+            Repellendus dolores neque doloribus, mollitia, sapiente deleniti facere non reiciendis ad ut sequi natus ex
+            nemo, ipsam beatae quam possimus optio odit voluptas culpa tenetur harum distinctio soluta? Qui blanditiis
+            itaque soluta! Ipsum, doloremque. Tempora architecto maxime voluptatum incidunt quis veritatis? Corrupti, qui
+            id
+            officia fugiat autem, voluptate a earum quibusdam ullam soluta magni necessitatibus amet aliquam totam
+            doloribus
+            molestiae animi? Quod, reiciendis fugit! Quidem deleniti laboriosam beatae. Nobis, hic? Ipsa corrupti ullam
+            consequatur, recusandae repellendus impedit neque fugit porro officiis hic laborum eaque omnis natus nulla,
+            nisi
+            voluptatem? Omnis totam, eaque veritatis blanditiis dolorum nesciunt similique, vero unde molestiae numquam a
+            incidunt voluptatum explicabo perspiciatis reiciendis, distinctio necessitatibus. Voluptates, ipsum sunt
+            deleniti in natus at voluptas aut dolorem eum. Aut doloribus totam minus eos repellendus consectetur.
+            Perferendis sed maxime labore nostrum, exercitationem nobis facere officiis soluta distinctio ea reiciendis
+            ipsum alias hic libero sint odit optio cupiditate aliquid. Aperiam provident nesciunt ad ipsum porro ipsa
+            saepe
+            itaque obcaecati id iusto suscipit quaerat reprehenderit atque cupiditate laborum corporis accusantium, cumque
+            corrupti voluptatibus, consequuntur debitis quos minus ut? Vitae soluta delectus assumenda dolore nulla,
+            dolores
+            corporis, neque minus, perspiciatis enim mollitia. Obcaecati repellat et nihil illum iure mollitia! Recusandae
+            vero modi dolores, quae, adipisci cum nemo fuga error tempore magni similique ea fugit minus laudantium sunt
+            ducimus ratione sint repellat autem officia. Doloremque est quae voluptates harum rem eaque, assumenda
+            laboriosam ratione possimus fuga blanditiis eius et, rerum adipisci molestiae recusandae minima. Veniam cumque
+            minus quasi, vero id tempora voluptatibus consectetur corporis corrupti! Amet, reprehenderit repudiandae ut
+            ullam exercitationem non vitae deserunt accusantium corporis, illo blanditiis hic recusandae repellat quam qui
+            iusto porro delectus sint! Deserunt doloribus harum perspiciatis! Quaerat eveniet magnam aut similique autem
+            veritatis recusandae sint quam rem natus totam nemo atque beatae quasi, repudiandae maiores aperiam error
+            ducimus saepe eum id velit accusantium aspernatur laboriosam. Nostrum inventore ut distinctio assumenda
+            officia
+            porro dicta quidem esse eaque illum velit totam corporis explicabo voluptas voluptatem alias, dolore aperiam,
+            minus laudantium molestias deleniti aspernatur rem? Vel reprehenderit dolorem quae nostrum reiciendis
+            similique,
+            explicabo, perspiciatis dignissimos odit iste, blanditiis fuga quidem ducimus iure rem incidunt veniam cumque.
+            Dolor, minus maiores in illo quia quibusdam iste sint, beatae nihil excepturi vitae voluptate commodi harum
+            explicabo ea dicta molestiae mollitia corrupti amet magni iure magnam vero! Voluptatum deleniti quas nostrum
+            quia harum numquam vero, a perferendis cumque temporibus, ad assumenda repellendus dolorum quidem aliquid
+            eligendi, possimus ullam omnis ea saepe sunt dolore. Iste voluptatem sapiente autem, fugit provident nulla
+            atque
+            voluptatibus, temporibus voluptate fugiat perspiciatis dolores at ea assumenda totam non tempora! Harum alias
+            quo blanditiis similique illo at libero ex vitae. Exercitationem neque voluptates ratione eos distinctio, sed
+            tempora doloribus id, quibusdam vitae cupiditate, sunt quaerat nulla quia aliquid!.
+        </p>
+    </div>
+
+
 </main>
