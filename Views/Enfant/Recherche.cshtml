@@ -41,7 +41,7 @@
         <div class="row">
             <div class="col-md mainSubject p-2 mage">
 
-              <a href="/Enfant/Detail">
+              <a href="/Enfant/Detail/@enfants[i].EnfantId">
                 <h1 style="margin-left: 15px;">@enfants[i].Nom @enfants[i].EnfantId     FIRST ONE</h1>
 
                 <div class="img-text-container">
@@ -52,7 +52,7 @@
             </div> 
 
             <div class="col-md mainSubject p-2 mage">
-            <a href="/Enfant/Detail">
+            <a href="/Enfant/Detail/@enfants[i+1].EnfantId">
                 <h1 style="margin-left: 15px;">@enfants[i+1].Nom @enfants[i+1].EnfantId     SECOND ONE</h1>
                 <div class="img-text-container">
                   <img src="@enfants[i+1].ImageURL" alt="Le Mage"
@@ -62,7 +62,7 @@
             </div> 
 
             <div class="col-md mainSubject p-2 mage">
-            <a href="/Enfant/Detail">
+            <a href="/Enfant/Detail/@enfants[i+2].EnfantId">
                 <h1 style="margin-left: 15px;">@enfants[i+2].Nom @enfants[i+2].EnfantId     THIRD ONE</h1>
                 <div class="img-text-container">
                   <img src="@enfants[i+2].ImageURL" alt="Le Mage"

@@ -19,16 +19,17 @@ namespace TP2_Skyrim.Controllers
         [Route("/Enfant/Detail/{id?}")]
         public IActionResult Detail(int? id)
         {
-            if(id == null) return View(null);
+            if(id == null) return View("NotFound");
             foreach(Enfant ef in DB.Enfants) 
             {
                 if(ef.EnfantId== id) { return View(ef); }
             }
-            return View(null);
+            return View("NotFound");
 
 
 
   
         }
+        
     }
 }
