@@ -24,9 +24,11 @@
 
         public int Difficulté { get; set; }
 
+        public string Image1Logo { get; set; }
 
+        public string Image2SS { get; set; }
 
-
+        public string Image3Art { get; set; }
     }
     
 }

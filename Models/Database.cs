@@ -74,7 +74,10 @@
                 UtilGen = "Utile pour un voleur ou pour éviter le combat.",
                 TypeAbilite = "Utilité",
                 NiveauDeRecommendation = 5,
-                Difficulté=7
+                Difficulté=7,
+                Image1Logo= "https://images.uesp.net/2/22/SR-perktree-Illusion.jpg",
+                Image2SS= "/images/illusion ss.png",
+                Image3Art= "https://images.uesp.net/8/86/LG-cardart-Cloudrest_Illusionist.png"
             }) ;
 
             Enfants.Add(new Enfant()
@@ -89,7 +92,10 @@
                 UtilGen = "Utile pour avoir de l'aide en combat.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 4,
-                Difficulté = 9
+                Difficulté = 9,
+                Image1Logo = "https://images.uesp.net/3/36/SR-perktree-Conjuration.jpg",
+                Image2SS = "https://images.uesp.net/thumb/5/5a/SR-creature-Flame_Atronach.jpg/600px-SR-creature-Flame_Atronach.jpg",
+                Image3Art = "https://images.uesp.net/7/78/LG-cardart-Conjuration_Scholar.png"
             });
 
             Enfants.Add(new Enfant()
@@ -104,7 +110,10 @@
                 UtilGen = "Utile pour le combat magique.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 7,
-                Difficulté = 6
+                Difficulté = 6,
+                Image1Logo = "https://images.uesp.net/3/38/SR-perktree-Destruction.jpg",
+                Image2SS = "/images/destruction ss.png",
+                Image3Art = "https://images.uesp.net/4/4b/LG-cardart-Cruel_Firebloom.png"
             });
 
             Enfants.Add(new Enfant()
@@ -119,7 +128,10 @@
                 UtilGen = "Utile pour la protection et le soin.",
                 TypeAbilite = "Utilité",
                 NiveauDeRecommendation = 6,
-                Difficulté = 6
+                Difficulté = 6,
+                Image1Logo = "https://images.uesp.net/e/ef/SR-perktree-Restoration.jpg",
+                Image2SS = "/images/restoration ss.jpg",
+                Image3Art = "https://images.uesp.net/e/ec/LG-cardart-Restoration_Tutor.png"
             });
 
             Enfants.Add(new Enfant()
@@ -134,7 +146,10 @@
                 UtilGen = "Utile pour la protection et l'utilité.",
                 TypeAbilite = "Utilité",
                 NiveauDeRecommendation = 4,
-                Difficulté = 7
+                Difficulté = 7,
+                Image1Logo = "https://images.uesp.net/thumb/d/dd/SR-perktree-Alteration.jpg/300px-SR-perktree-Alteration.jpg",
+                Image2SS = "/images/alteration ss.jfif",
+                Image3Art = "https://images.uesp.net/8/8c/LG-cardart-Wardcrafter.png"
             });
 
             Enfants.Add(new Enfant()
@@ -149,7 +164,10 @@
                 UtilGen = "Utile pour tous. Donne des effets aux armures et armes.",
                 TypeAbilite = "Amélioration",
                 NiveauDeRecommendation = 10,
-                Difficulté = 8
+                Difficulté = 8,
+                Image1Logo = "https://images.uesp.net/e/e0/SR-perktree-Enchanting.jpg",
+                Image2SS = "https://images.uesp.net/thumb/b/b9/SR-activity-Arcane_Enchanter.jpg/800px-SR-activity-Arcane_Enchanter.jpg",
+                Image3Art = "https://images.uesp.net/5/5a/LG-cardart-Arcane_Enchanter.png"
             });
 
             Enfants.Add(new Enfant()
@@ -164,7 +182,10 @@
                 UtilGen = "Utile pour tous. Améliore les armures et armes.",
                 TypeAbilite = "Amélioration",
                 NiveauDeRecommendation = 10,
-                Difficulté = 8
+                Difficulté = 8,
+                Image1Logo = "https://images.uesp.net/e/eb/SR-perktree-Smithing.jpg",
+                Image2SS = "https://images.uesp.net/thumb/e/e7/SR-activity-Forge.jpg/800px-SR-activity-Forge.jpg",
+                Image3Art = "https://images.uesp.net/thumb/0/03/LG-cardart-Sparksmith.png/600px-LG-cardart-Sparksmith.png"
             });
 
             Enfants.Add(new Enfant()
@@ -179,7 +200,10 @@
                 UtilGen = "Utile pour la protection sans furtivité.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 7,
-                Difficulté = 3
+                Difficulté = 3,
+                Image1Logo = "https://images.uesp.net/thumb/0/0d/SR-perktree-Heavy_Armor.jpg/300px-SR-perktree-Heavy_Armor.jpg",
+                Image2SS = "https://images.uesp.net/thumb/2/23/SR-item-Dragonplate_Armor_Male.jpg/600px-SR-item-Dragonplate_Armor_Male.jpg",
+                Image3Art = "https://images.uesp.net/4/43/LG-cardart-Dragonplate_Armor.png"
             });
 
             Enfants.Add(new Enfant()
@@ -194,7 +218,10 @@
                 UtilGen = "Utile pour la protection pour un guerrier.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 4,
-                Difficulté = 4
+                Difficulté = 4,
+                Image1Logo = "https://images.uesp.net/9/90/SR-perktree-Block.jpg",
+                Image2SS = "/images/bloque ss.png",
+                Image3Art = "https://images.uesp.net/2/23/LG-cardart-Yew_Shield.png"
             });
 
             Enfants.Add(new Enfant()
@@ -209,7 +236,10 @@
                 UtilGen = "Utile pour un guerrier voulant plus de force mais moins de vitesse.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 7,
-                Difficulté = 3
+                Difficulté = 3,
+                Image1Logo = "https://images.uesp.net/3/30/SR-perktree-Two-handed.jpg",
+                Image2SS = "https://preorderskyrim.files.wordpress.com/2011/08/skyrim-orc-screenshot-3.jpg",
+                Image3Art = "https://images.uesp.net/6/60/LG-cardart-Stormcloak_Skirmisher.png"
             });
 
             Enfants.Add(new Enfant()
@@ -224,7 +254,10 @@
                 UtilGen = "Utile pour un guerrier voulant moins de force mais plus de vitesse.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 7,
-                Difficulté = 3
+                Difficulté = 3,
+                Image1Logo = "https://images.uesp.net/thumb/9/9f/SR-perktree-One-handed.jpg/300px-SR-perktree-One-handed.jpg",
+                Image2SS = "https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/09/Skyrim-mod-keys-550x309.jpg",
+                Image3Art = "https://images.uesp.net/3/3a/LG-cardart-Battlefield_Scrounger.png"
             });
 
             Enfants.Add(new Enfant()
@@ -239,7 +272,10 @@
                 UtilGen = "Utile pour les guerriers ou voleurs qui veulent une option de distance.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 8,
-                Difficulté = 4
+                Difficulté = 4,
+                Image1Logo = "https://images.uesp.net/9/9d/SR-perktree-Archery.jpg",
+                Image2SS = "/images/archery ss.jpg",
+                Image3Art = "https://images.uesp.net/8/80/LG-cardart_Archer%27s_Gambit.jpg"
             });
 
             Enfants.Add(new Enfant()
@@ -254,7 +290,10 @@
                 UtilGen = "Utile pour la protection avec furtivité.",
                 TypeAbilite = "Combat",
                 NiveauDeRecommendation = 10,
-                Difficulté = 8
+                Difficulté = 8,
+                Image1Logo = "https://images.uesp.net/f/f2/SR-perktree-Light_Armor.jpg",
+                Image2SS = "https://images.uesp.net/thumb/3/3c/SR-item-Forsworn_Armor_Male.jpg/600px-SR-item-Forsworn_Armor_Male.jpg",
+                Image3Art = "https://images.uesp.net/e/e0/LG-cardart-Forsworn_Looter.png"
             });
 
             Enfants.Add(new Enfant()
@@ -269,7 +308,10 @@
                 UtilGen = "Utile pour un voleur. Aide à moins se faire détecter.",
                 TypeAbilite = "Utilité",
                 NiveauDeRecommendation = 9,
-                Difficulté = 6
+                Difficulté = 6,
+                Image1Logo = "https://images.uesp.net/b/b0/SR-perktree-Sneak.jpg",
+                Image2SS = "/images/sneak ss.jpeg",
+                Image3Art = "https://images.uesp.net/7/78/LG-cardart-Shadowscale_Partisan.png"
             });
 
             Enfants.Add(new Enfant()
@@ -298,7 +340,10 @@
                 UtilGen = "Utile pour tous, aide à ouvrir des coffres/portes barrés.",
                 TypeAbilite = "Utilité",
                 NiveauDeRecommendation = 3,
-                Difficulté = 2
+                Difficulté = 2,
+                Image1Logo = "https://images.uesp.net/5/5e/SR-perktree-Lockpicking.jpg",
+                Image2SS = "/images/crochetage.jpg",
+                Image3Art = "https://images.uesp.net/7/71/LG-cardart-Thieves_Guild_Recruit.png"
             });
 
             Enfants.Add(new Enfant()
@@ -324,7 +369,10 @@
                 UtilGen = "Utile pour un voleur, aide à voler sans se faire prendre.",
                 TypeAbilite = "Utilité",
                 NiveauDeRecommendation = 6,
-                Difficulté = 10
+                Difficulté = 10,
+                Image1Logo = "https://images.uesp.net/6/68/SR-perktree-Pickpocket.jpg",
+                Image2SS = "https://static1.dualshockersimages.com/wordpress/wp-content/uploads/2022/07/PickpocketSkyrim.jpg",
+                Image3Art = "https://images.uesp.net/3/31/LG-cardart-Riften_Pickpocket.png"
             });
 
             Enfants.Add(new Enfant()
@@ -354,7 +402,10 @@
                 UtilGen = "Utile pour tous, donne des meilleurs prix.",
                 TypeAbilite = "Utilité",
                 NiveauDeRecommendation = 7,
-                Difficulté = 4
+                Difficulté = 4,
+                Image1Logo = "https://images.uesp.net/e/e4/SR-item-Gold.jpg",
+                Image2SS = "https://images.uesp.net/6/60/SR-perktree-Speech.jpg",
+                Image3Art = "https://images.uesp.net/f/fd/LG-cardart-Barter.png"
             });
 
             Enfants.Add(new Enfant()
@@ -386,7 +437,10 @@
                 UtilGen = "Utile pour tous, offre des améliorations.",
                 TypeAbilite = "Amélioration",
                 NiveauDeRecommendation = 8,
-                Difficulté = 4
+                Difficulté = 4,
+                Image1Logo = "https://en.uesp.net/wiki/File:SR-perktree-Alchemy.jpg",
+                Image2SS = "https://images.uesp.net/7/7a/SR-activity-Alchemy_Lab.jpg",
+                Image3Art = "https://images.uesp.net/2/28/LG-cardart-Cauldron_Keeper.png"
             });
 
             //Liaison objets Enfants aux Objets Parent
