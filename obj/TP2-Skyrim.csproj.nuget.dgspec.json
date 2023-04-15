@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj": {}
+    "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj": {}
   },
   "projects": {
-    "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj": {
+    "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj",
+        "projectUniqueName": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj",
         "projectName": "TP2-Skyrim",
-        "projectPath": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj",
-        "packagesPath": "C:\\Users\\2030719\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\obj\\",
+        "projectPath": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\TP2-Skyrim.csproj",
+        "packagesPath": "C:\\Users\\Hedi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\2030719\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Hedi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -49,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,7 +62,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.310\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

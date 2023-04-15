@@ -83,72 +83,26 @@
             RECHERCHER
           </h2>
           <form action="https://www.w3schools.com/action_page.php" method="POST">
-                <input type="text" name="MotsCles" value="@Model.Criteres.MotsCles">
+                <input type="text" name="MotsCles">
             <h4 class="recherche" style="padding-top: 50px; width: 100%; ">Nombre de compétences</h4>
-                <input type="number" style="max-width: 40%;" name="NbrCompMin" value="@Model.Criteres.NbrCompMin"> <input type="number" class="text-end" style="max-width: 40%; margin-left: auto;" name="NbrCompMax" value="@Model.Criteres.NbrCompMax">
+                <input type="number" style="max-width: 40%; " name="NbrCompMin"> <input type="number" class="text-end" style="max-width: 40%; margin-left: auto;" name="NbrCompMax">
 
             <h4 class="recherche" style="padding-top: 50px; ">habileté vedette</h4>
-                <select id="choixBig" name="ChoixHabileteVedette" style="width: 100%;" value="@Model.Criteres.ChoixHabileteVedette">
-              
-
-                    @if (Model.Criteres.ChoixHabileteVedette == "either")
-                    {
-                        <option value="either" selected>Peu importe</option>
-                    }
-                    else
-                    {
-                        <option value="either">Peu importe</option>
-                    }
-                    @if (Model.Criteres.ChoixHabileteVedette == "oui")
-                    {
-                        <option value="oui" selected>Oui</option>
-                    }
-                    else
-                    {
-                        <option value="oui">Oui</option>
-                    }
-                    @if (Model.Criteres.ChoixHabileteVedette == "non")
-                    {
-                        <option value="non" selected>Non</option>
-                    }
-                    else
-                    {
-                        <option value="non">Non</option>
-                    }
-
+            <select id="choixBig" name="choix de l'habileté" style="width: 100%;">
+              <option value="either">Peu importe</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
             </select>
             <h4 class="recherche" style="padding-top: 50px; ">Classe</h4>
-            
-                @if (@Model.Criteres.EstMage)
-                {
-                    <input type="checkbox" checked name="EstMage" value="true" class="form-check-input">
-                }
-                else
-                {
-                    <input type="checkbox" name="EstMage" value="true" class="form-check-input">
-                }
+                <input type="radio" id="mageBig" name="EstMage" value="mage">
             <label for="mage">
               Mage
             </label><br>
-                @if (@Model.Criteres.EstGuerrier)
-                {
-                    <input type="checkbox" checked name="EstGuerrier" value="true" class="form-check-input">
-                }
-                else
-                {
-                    <input type="checkbox" name="EstGuerrier" value="true" class="form-check-input">
-                }
+                <input type="radio" id="fighterBig" name="EstGuerrier" value="guerrier">
             <label for="fighter">
               Guerrier
             </label><br>
-                @if (@Model.Criteres.EstVoleur)
-                {
-                    <input type="checkbox" checked name="EstVoleur" value="true" class="form-check-input">
-                }
-                else
-                {
-                    <input type="checkbox" name="EstVoleur" value="true" class="form-check-input">
-                }
+                <input type="radio" id="thiefBig" name="EstVoleur" value="voleur">
             <label for="thief">
               Voleur
             </label>

@@ -8,9 +8,15 @@ namespace TP2_Skyrim.Controllers
         private Database DB { get; set; }
 
         public HomeController(Database db) { this.DB = db; }
+        
+        
+        [Route("")]
+        [Route("/Home/Index")]
         public IActionResult Index()
         {
-            return View();
+            List<Parent> parents = new List<Parent>();
+            ViewData["Parents"] = DB.Parents;
+            return View(DB.Parents);
         }
     }
 }

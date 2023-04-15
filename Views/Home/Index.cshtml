@@ -1,12 +1,60 @@
-﻿@*
+﻿@using TP2_Skyrim.Models
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
     Layout = "_Layout";
 }
-<main>
+<main class="container-fluid grandContainer mw-50 overflow-hidden" style="background-color: rgba(0,0,0,.7); ">
+    <!--Fond sujets principaux-->
+
+    <h1>Les Classes</h1> <!--Titre Principal-->
     
-        <p>Une texte très temporaire. INDEX HOME</p>
-        <img src="images/fighter.JPG" alt="Le Combatant" class="col mainImages" style="width: 90%;">
-    
+    @{
+        List<Parent> parents = new List<Parent>();
+
+        foreach (Parent pr in ViewData["Parents"] as List<Parent>)
+        {
+            parents.Add(pr);
+        }
+    }
+
+    <div class="container-fluid overflow-hidden" style="border: 50px; border-color: brown;">
+        <div class="row">
+            @{
+                foreach(Parent pr in parents){
+                    <div class="col-md mainSubject p-2">
+                        <a href="/Enfant/Recherche">
+                            <h1 style="margin-left: 15px;">@pr.Nom</h1>
+                            <img src="@pr.ImageURL" alt="@pr.Nom" class="col mainImages" style="width: 90%;"> <!--MAGE-->
+                            <ul style="margin-left: 15px; margin-top: 5px;">
+                                <li>Nombre de habileté de combat : @pr.CombatSkills</li>
+                                <li>Nombre de habileté d'utilité : @pr.UtilitySkills</li>
+                                <li>Nombre de habileté d'amélioration : @pr.UpgradeSkills</li>
+                            </ul>
+                            <p style="margin-left: 15px;">
+                                @pr.Description
+
+                            </p>
+                            
+                        </a>
+                    </div>
+
+
+
+                }
+
+
+             }
+            
+            
+
+
+            
+
+
+
+        </div>
+
+    </div>
 </main>

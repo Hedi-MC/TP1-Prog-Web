@@ -29,7 +29,7 @@
             {
                 ParentId = 2,
                 Nom = "Le Guerrier",
-                ImageURL = "~/images/fighter.jpg",
+                ImageURL = "./images/fighter.jpg",
                 Description = "Le Guerrier excèle dans tout ce qui concèrne le combat et la défense. " +
                 "Il contient toutes les compétences de combat qui ne consistent pas de la magie. " +
                 "De plus, il comprend l'habileté du forgeron, ce qui est utile pour toute classe."+
@@ -43,7 +43,7 @@
             {
                 ParentId = 3,
                 Nom = "Le Voleur",
-                ImageURL = "images/thief.jpg",
+                ImageURL = "./images/thief.jpg",
                 Description = "La classe du voleur possède plusieurs habiletés qui lui permet de mieux se faufiler, " +
                 "éviter les enemies ainsi que de comettre des actes criminels. " +
                 "Tout en ayant l'aptitude d'éviter ses répercussions."+
@@ -438,7 +438,7 @@
                 TypeAbilite = "Amélioration",
                 NiveauDeRecommendation = 8,
                 Difficulté = 4,
-                Image1Logo = "https://en.uesp.net/wiki/File:SR-perktree-Alchemy.jpg",
+                Image1Logo = "https://images.uesp.net/c/c8/SR-perktree-Alchemy.jpg",
                 Image2SS = "https://images.uesp.net/7/7a/SR-activity-Alchemy_Lab.jpg",
                 Image3Art = "https://images.uesp.net/2/28/LG-cardart-Cauldron_Keeper.png"
             });
