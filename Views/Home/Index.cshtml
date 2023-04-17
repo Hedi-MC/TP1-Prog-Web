@@ -9,7 +9,6 @@
     <!--Fond sujets principaux-->
 
     <h1>Les Classes</h1> <!--Titre Principal-->
-    
     @{
         List<Parent> parents = new List<Parent>();
 
@@ -22,7 +21,8 @@
     <div class="container-fluid overflow-hidden" style="border: 50px; border-color: brown;">
         <div class="row">
             @{
-                foreach(Parent pr in parents){
+                foreach (Parent pr in parents)
+                {
                     <div class="col-md mainSubject p-2">
                         <a href="/Enfant/Recherche">
                             <h1 style="margin-left: 15px;">@pr.Nom</h1>
@@ -36,7 +36,7 @@
                                 @pr.Description
 
                             </p>
-                            
+
                         </a>
                     </div>
 
@@ -45,12 +45,12 @@
                 }
 
 
-             }
-            
-            
+            }
 
 
-            
+
+
+
 
 
 

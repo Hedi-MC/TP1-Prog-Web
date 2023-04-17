@@ -8,15 +8,15 @@ namespace TP2_Skyrim.Controllers
         private Database DB { get; set; }
 
         public HomeController(Database db) { this.DB = db; }
-        
-        
-        [Route("")]
-        [Route("/Home/Index")]
+
+
+        [Route("")]                 //c'est la page par défaut, sinon ca faisait un 404 
+        [Route("/Home/Index")]      //jvoulais pas rewrite mes boutons
         public IActionResult Index()
         {
             List<Parent> parents = new List<Parent>();
-            ViewData["Parents"] = DB.Parents;
-            return View(DB.Parents);
+            ViewData["Parents"] = DB.Parents;           //mon quota de viewdata <B)
+            return View(DB.Parents);    
         }
     }
 }

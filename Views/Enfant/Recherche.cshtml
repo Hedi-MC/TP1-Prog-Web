@@ -13,83 +13,83 @@
 <main class="container-fluid grandContainer mw-50 overflow-hidden" style="background-color: rgba(0,0,0,.7); ">
 
 
-        <h1>Les Classes</h1> <!--Titre Principal-->
-  <div class="row justify-content-end">
+    <h1>Les Classes</h1> <!--Titre Principal-->
+    <div class="row justify-content-end">
 
 
 
 
         <div class="col-md-9 overflow-hidden" style="border: 50px; background-color: rgba(2, 3, 5, 0.507);">
-        
-        @{
-            int orange2 = 0;
-            List<Enfant> enfants = new List<Enfant>();
 
-            foreach(Enfant ef in Model.Resultat)
-            {
-                enfants.Add(ef);
+            @{
+                int orange2 = 0;
+                List<Enfant> enfants = new List<Enfant>();
+
+                foreach (Enfant ef in Model.Resultat)
+                {
+                    enfants.Add(ef);
+                }
             }
-        }
-        
 
-        @for(int i =0; i<enfants.Count(); i+=3)
-        {
 
-            
-            
-            
-        <div class="row">
-            <div class="col-md mainSubject p-2 mage">
+            @for (int i = 0; i < enfants.Count(); i += 3)
+            {
 
-              <a href="/Enfant/Detail/@enfants[i].EnfantId">
-                <h1 style="margin-left: 15px;">@enfants[i].Nom @enfants[i].EnfantId     FIRST ONE</h1>
 
-                <div class="img-text-container">
-                  <img src="@enfants[i].ImageURL" alt="Le Mage"
-                    class="col mainImages mageImg" style="width: 90%;">
+
+
+                <div class="row">
+                    <div class="col-md mainSubject p-2 mage">
+
+                        <a href="/Enfant/Detail/@enfants[i].EnfantId">
+                            <h1 style="margin-left: 15px;">@enfants[i].Nom @enfants[i].EnfantId     FIRST ONE</h1>
+
+                            <div class="img-text-container">
+                                <img src="@enfants[i].ImageURL" alt="Le Mage"
+                                 class="col mainImages mageImg" style="width: 90%;">
+                            </div>
+                        </a> <!--MAGE-->
+                    </div>
+
+                    <div class="col-md mainSubject p-2 mage">
+                        <a href="/Enfant/Detail/@enfants[i+1].EnfantId">
+                            <h1 style="margin-left: 15px;">@enfants[i+1].Nom @enfants[i+1].EnfantId     SECOND ONE</h1>
+                            <div class="img-text-container">
+                                <img src="@enfants[i+1].ImageURL" alt="Le Mage"
+                                 class="col mainImages mageImg" style="width: 90%;">
+                            </div>
+                        </a> <!--MAGE-->
+                    </div>
+
+                    <div class="col-md mainSubject p-2 mage">
+                        <a href="/Enfant/Detail/@enfants[i+2].EnfantId">
+                            <h1 style="margin-left: 15px;">@enfants[i+2].Nom @enfants[i+2].EnfantId     THIRD ONE</h1>
+                            <div class="img-text-container">
+                                <img src="@enfants[i+2].ImageURL" alt="Le Mage"
+                                 class="col mainImages mageImg" style="width: 90%;">
+                            </div>
+                        </a> <!--MAGE-->
+                    </div>
+
                 </div>
-              </a> <!--MAGE-->
-            </div> 
-
-            <div class="col-md mainSubject p-2 mage">
-            <a href="/Enfant/Detail/@enfants[i+1].EnfantId">
-                <h1 style="margin-left: 15px;">@enfants[i+1].Nom @enfants[i+1].EnfantId     SECOND ONE</h1>
-                <div class="img-text-container">
-                  <img src="@enfants[i+1].ImageURL" alt="Le Mage"
-                    class="col mainImages mageImg" style="width: 90%;">
-                </div>
-              </a> <!--MAGE-->
-            </div> 
-
-            <div class="col-md mainSubject p-2 mage">
-            <a href="/Enfant/Detail/@enfants[i+2].EnfantId">
-                <h1 style="margin-left: 15px;">@enfants[i+2].Nom @enfants[i+2].EnfantId     THIRD ONE</h1>
-                <div class="img-text-container">
-                  <img src="@enfants[i+2].ImageURL" alt="Le Mage"
-                    class="col mainImages mageImg" style="width: 90%;">
-                </div>
-              </a> <!--MAGE-->
-             </div> 
-       
-        </div>    
-        }
+            }
 
         </div>
-    
-        
+
+
         <div class="col-md-2 h-auto colRecherche d-none d-md-block ">
 
-          <h2 class="recherche" style="padding-top: 50px; padding-left: 10px;">
-            RECHERCHER
-          </h2>
-          <form action="https://www.w3schools.com/action_page.php" method="POST">
+            <h2 class="recherche" style="padding-top: 50px; padding-left: 10px;">
+                RECHERCHER
+            </h2>
+            <form action="https://www.w3schools.com/action_page.php" method="POST">
                 <input type="text" name="MotsCles" value="@Model.Criteres.MotsCles">
-            <h4 class="recherche" style="padding-top: 50px; width: 100%; ">Nombre de compétences</h4>
+                <h4 class="recherche" style="padding-top: 50px; width: 100%; ">Nombre de compétences</h4>
                 <input type="number" style="max-width: 40%;" name="NbrCompMin" value="@Model.Criteres.NbrCompMin"> <input type="number" class="text-end" style="max-width: 40%; margin-left: auto;" name="NbrCompMax" value="@Model.Criteres.NbrCompMax">
 
-            <h4 class="recherche" style="padding-top: 50px; ">habileté vedette</h4>
+                <h4 class="recherche" style="padding-top: 50px; ">habileté vedette</h4>
                 <select id="choixBig" name="ChoixHabileteVedette" style="width: 100%;" value="@Model.Criteres.ChoixHabileteVedette">
-              
+
 
                     @if (Model.Criteres.ChoixHabileteVedette == "either")
                     {
@@ -116,9 +116,9 @@
                         <option value="non">Non</option>
                     }
 
-            </select>
-            <h4 class="recherche" style="padding-top: 50px; ">Classe</h4>
-            
+                </select>
+                <h4 class="recherche" style="padding-top: 50px; ">Classe</h4>
+
                 @if (@Model.Criteres.EstMage)
                 {
                     <input type="checkbox" checked name="EstMage" value="true" class="form-check-input">
@@ -127,9 +127,9 @@
                 {
                     <input type="checkbox" name="EstMage" value="true" class="form-check-input">
                 }
-            <label for="mage">
-              Mage
-            </label><br>
+                <label for="mage">
+                    Mage
+                </label><br>
                 @if (@Model.Criteres.EstGuerrier)
                 {
                     <input type="checkbox" checked name="EstGuerrier" value="true" class="form-check-input">
@@ -138,9 +138,9 @@
                 {
                     <input type="checkbox" name="EstGuerrier" value="true" class="form-check-input">
                 }
-            <label for="fighter">
-              Guerrier
-            </label><br>
+                <label for="fighter">
+                    Guerrier
+                </label><br>
                 @if (@Model.Criteres.EstVoleur)
                 {
                     <input type="checkbox" checked name="EstVoleur" value="true" class="form-check-input">
@@ -149,27 +149,28 @@
                 {
                     <input type="checkbox" name="EstVoleur" value="true" class="form-check-input">
                 }
-            <label for="thief">
-              Voleur
-            </label>
-            <br>
-            <div class="d-md-none d-xxl-block">
-              <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <button
-                type="submit" class="bouton"
-                style="margin-left: 50px; background-color: cornflowerblue; "> Rechercher</button>
-            </div>
-            <div class=" d-md-block d-xxl-none">
-              <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <br>
-              <button type="submit" class="bouton" style=" background-color: cornflowerblue;"> Rechercher</button>
-            </div>
+                <label for="thief">
+                    Voleur
+                </label>
+                <br>
+                <div class="d-md-none d-xxl-block">
+                    <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <button type="submit" class="bouton"
+                                                                                                                  style="margin-left: 50px; background-color: cornflowerblue; ">
+                        Rechercher
+                    </button>
+                </div>
+                <div class=" d-md-block d-xxl-none">
+                    <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <br>
+                    <button type="submit" class="bouton" style=" background-color: cornflowerblue;"> Rechercher</button>
+                </div>
 
 
-          </form>
+            </form>
 
-           </div>
+        </div>
 
-    
 
- </div>
-    
+
+    </div>
+
 </main>

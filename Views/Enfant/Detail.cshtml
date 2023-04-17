@@ -10,21 +10,17 @@
 <main class="container-fluid grandContainer mw-50 overflow-auto  h-auto"
       style="background-color: rgba(0,0,0,.7); margin-bottom: 50px; ">
     <!--Fond sujets principaux-->
-    
-     
-    
-    
     @{
         String nomParent = "";
-        if(@Model.ParentId==1){ nomParent = "Mage"; }
-        else if(@Model.ParentId==2){ nomParent = "Guerrier"; }
-        else if(@Model.ParentId==3){ nomParent = "Voleur"; }
+        if (@Model.ParentId == 1) { nomParent = "Mage"; }
+        else if (@Model.ParentId == 2) { nomParent = "Guerrier"; }
+        else if (@Model.ParentId == 3) { nomParent = "Voleur"; }
         else { nomParent = "Classe non trouvée"; }
 
     }
-    
+
     <h1>Détails de l'habileté</h1> <!--Titre Principal-->
-    
+
     <div class="container-fluid  " style="border: 50px; border-color: brown; height: 100%;">
 
         <div class="row colonnes ligne overflow-hidden   ">
@@ -82,7 +78,7 @@
                 <p>Niveau de recommendation:</p>
                 <p>Difficulté:</p>
             </div>
-            
+
 
             <div class="col-auto d-md-none d-lg-block colonnes texte h-100  thiefText">
                 <p>@Model.Nom</p> <!--Donner un input à ces dudes là-->
