@@ -2,11 +2,14 @@
 {
     public class CritereRechercheViewModel
     {
-        public string ChoixHabileteVedette { get; set; }
+       
 
         public bool EstMage { get; set; }
         public bool EstGuerrier { get; set; }
         public bool EstVoleur { get; set; }
+
+        public string ChoixHabileteVedette { get; set; }
+
 
         public int? NbrCompMin { get; set; }
 

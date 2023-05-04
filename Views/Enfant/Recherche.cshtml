@@ -32,13 +32,13 @@
             }
 
 
-            @for (int i = 0; i < enfants.Count(); i += 3)
+            @for (int i = 0; i < enfants.Count(); i++)
             {
-
-
-
-
-                <div class="row">
+                if(i%3==0)
+                {
+                    <div class="row">
+                        }
+                
                     <div class="col-md mainSubject p-2 mage">
 
                         <a href="/Enfant/Detail/@enfants[i].EnfantId">
@@ -50,28 +50,9 @@
                             </div>
                         </a> <!--MAGE-->
                     </div>
-
-                    <div class="col-md mainSubject p-2 mage">
-                        <a href="/Enfant/Detail/@enfants[i+1].EnfantId">
-                            <h1 style="margin-left: 15px;">@enfants[i+1].Nom @enfants[i+1].EnfantId     SECOND ONE</h1>
-                            <div class="img-text-container">
-                                <img src="@enfants[i+1].ImageURL" alt="Le Mage"
-                                 class="col mainImages mageImg" style="width: 90%;">
-                            </div>
-                        </a> <!--MAGE-->
+                    if(i%3==1){
                     </div>
-
-                    <div class="col-md mainSubject p-2 mage">
-                        <a href="/Enfant/Detail/@enfants[i+2].EnfantId">
-                            <h1 style="margin-left: 15px;">@enfants[i+2].Nom @enfants[i+2].EnfantId     THIRD ONE</h1>
-                            <div class="img-text-container">
-                                <img src="@enfants[i+2].ImageURL" alt="Le Mage"
-                                 class="col mainImages mageImg" style="width: 90%;">
-                            </div>
-                        </a> <!--MAGE-->
-                    </div>
-
-                </div>
+                }
             }
 
         </div>
@@ -82,7 +63,7 @@
             <h2 class="recherche" style="padding-top: 50px; padding-left: 10px;">
                 RECHERCHER
             </h2>
-            <form action="https://www.w3schools.com/action_page.php" method="POST">
+            <form action="/Enfant/Filtrer" method="POST">
                 <input type="text" name="MotsCles" value="@Model.Criteres.MotsCles">
                 <h4 class="recherche" style="padding-top: 50px; width: 100%; ">Nombre de compétences</h4>
                 <input type="number" style="max-width: 40%;" name="NbrCompMin" value="@Model.Criteres.NbrCompMin"> <input type="number" class="text-end" style="max-width: 40%; margin-left: auto;" name="NbrCompMax" value="@Model.Criteres.NbrCompMax">

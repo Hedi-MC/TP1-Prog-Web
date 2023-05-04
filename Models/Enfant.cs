@@ -43,6 +43,9 @@
 
         //Image 3 du carousel, de l'art du jeu elder scrolls legends en rapport avec l'habileté
         public string Image3Art { get; set; }
+
+        //Est une Vedette
+        public bool Vedette { get; set; }
     }
 
 }

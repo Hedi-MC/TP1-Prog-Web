@@ -13,7 +13,6 @@ namespace TP2_Skyrim.Controllers
         [Route("/Enfant/Recherche")]
         public IActionResult Recherche()
         {
-
             //Les criteres c'est hard laid, mais je fais ce que je peux
 
             //on mets les criteres en true histoire que les trucs show up au début
@@ -25,14 +24,61 @@ namespace TP2_Skyrim.Controllers
             model.Resultat = DB.Enfants.ToList();
             ViewData["Enfants"] = DB.Enfants;
             return View(model);
-
-
-
-
-            //List<Enfant> enfants = new List<Enfant>();
-            // ViewData["Enfants"] = DB.Enfants;
-            // return View(DB.Enfants);
         }
+
+        [Route("/Enfant/Filtrer")]
+        public IActionResult Filtrer(CritereRechercheViewModel criteres)
+        {
+            IEnumerable<Enfant> don = DB.Enfants;
+
+           
+            if(criteres.MotsCles != null){ don = don.Where(e => e.Nom.Contains(criteres.MotsCles)); }//on check les mots clés
+
+            //if (criteres.NbrCompMin != 0) { don = don.Where(e => e.NbrCompetences >= criteres.NbrCompMin); } //on check les nombres de skills min
+
+            //if (criteres.NbrCompMax != 0) { don = don.Where(e => e.NbrCompetences <= criteres.NbrCompMax); } //on check les nombres de skills max
+
+
+
+            //if (criteres.ChoixHabileteVedette == "oui")     //si on select oui, on check ceux qui sont true
+            //{
+            //    don = don.Where(e => e.Vedette == true);
+            //}
+            //else if (criteres.ChoixHabileteVedette == "non")    //si on select non, on check ceux qui sont false
+            //{
+            //    don = don.Where(e => e.Vedette == false);
+            //}
+           
+
+
+            //if (criteres.EstMage == true)                       //check si le parent est Mage
+            //{
+            //    don = don.Where(e => e.Parent.Nom == "Le Mage");
+            //}
+
+            //if (criteres.EstGuerrier == true)                   //check si le parent est Guerrier
+            //{
+            //    don = don.Where(e => e.Parent.Nom == "Le Guerrier");
+            //}
+
+            //if (criteres.EstVoleur == true)                     //check si le parent est Voleur
+            //{
+            //    don = don.Where(e => e.Parent.Nom == "Le Voleur");
+            //}
+
+            PageRechercheViewModel page=new PageRechercheViewModel();
+            page.Criteres = criteres;
+            page.Resultat = don.ToList();
+
+            return View("Recherche",page);
+
+        }
+
+
+
+
+
+
 
         // /||| #let there be dung# |||\
 
@@ -51,10 +97,6 @@ namespace TP2_Skyrim.Controllers
                 if (ef.EnfantId == id) { return View("Detail", ef); } //retourne detail pour qu'il sache quel cshtml utiliser + le actual enfant
             }
             return View("NotFound");    //si ca mess up somehow, on mets un 404
-
-
-
-
         }
 
 
@@ -72,10 +114,6 @@ namespace TP2_Skyrim.Controllers
 
             }
             return View("NotFound");    //si ca mess up somehow, on mets un 404
-
-
-
-
         }
 
     }
