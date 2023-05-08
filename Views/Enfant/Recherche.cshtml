@@ -10,16 +10,16 @@
 }
 
 <link rel="stylesheet" href="/css/stylesRecherche.css">
-<main class="container-fluid grandContainer mw-50 overflow-hidden" style="background-color: rgba(0,0,0,.7); ">
+<main class="coalign-contentgrandContainer mw-50 overflow-hidden" style="background-color: rgba(0,0,0,.7); ">
 
 
     <h1>Les Classes</h1> <!--Titre Principal-->
-    <div class="row justify-content-end">
+    <div class="row">
 
 
 
 
-        <div class="col-md-9 overflow-hidden" style="border: 50px; background-color: rgba(2, 3, 5, 0.507);">
+        <div class="col-md-9 overflow-hidden align-self-start" style="border: 50px; background-color: rgba(2, 3, 5, 0.507);">
 
             @{
                 int orange2 = 0;
@@ -31,31 +31,74 @@
                 }
             }
 
+            @if (enfants.Count() == 0)
+            {
+                <div class="text-center align-items-center" style="vertical-align:middle">
+                <h2>Aucune habileté correspond à votre recherche.</h2>
+                <h2>Veuillez réessayer.</h2>
+                </div>
+            }
 
             @for (int i = 0; i < enfants.Count(); i++)
             {
-                if(i%3==0)
+                if (i % 3 == 0)
+                    {
+                        @:<div class="row">
+                    }
+                if (enfants[i].Parent.Nom=="Le Mage")
                 {
-                    <div class="row">
-                        }
-                
-                    <div class="col-md mainSubject p-2 mage">
-
+                    <div class="col-md mainSubject p-2 mage" >
                         <a href="/Enfant/Detail/@enfants[i].EnfantId">
-                            <h1 style="margin-left: 15px;">@enfants[i].Nom @enfants[i].EnfantId     FIRST ONE</h1>
-
+                            <h1 style="margin-left: 22px; ">@enfants[i].Nom</h1>
+                            <h4 style="margin-left: 23px; color:white;">@enfants[i].NbrCompetences Compétences</h4>
                             <div class="img-text-container">
-                                <img src="@enfants[i].ImageURL" alt="Le Mage"
+                                <img src="@enfants[i].ImageURL" alt="@enfants[i].Nom"
                                  class="col mainImages mageImg" style="width: 90%;">
                             </div>
                         </a> <!--MAGE-->
                     </div>
-                    if(i%3==1){
-                    </div>
+                   
                 }
+                else if (enfants[i].Parent.Nom=="Le Guerrier")
+                {
+                    
+                    <div class="col-md mainSubject p-2 guerrier">
+                        <a href="/Enfant/Detail/@enfants[i].EnfantId">
+                            <h1 style="margin-left: 22px;">@enfants[i].Nom</h1>
+                            <h4 style="margin-left: 23px; color:white;">@enfants[i].NbrCompetences Compétences</h4>
+                            <div class="img-text-container">
+                                <img src="@enfants[i].ImageURL" alt="@enfants[i].Nom"
+                                 class="col mainImages guerrierImg" style="width: 90%;">
+                            </div>
+                        </a> <!--MAGE-->
+                    </div>
+                   
+                }
+                else if (enfants[i].Parent.Nom=="Le Voleur")
+                {
+                    
+                    <div class="col-md mainSubject p-2 voleur">
+                        <a href="/Enfant/Detail/@enfants[i].EnfantId">
+                            <h1 style="margin-left: 22px;">@enfants[i].Nom</h1>
+                            <h4 style="margin-left: 23px; color:white;">@enfants[i].NbrCompetences Compétences</h4>
+                            <div class="img-text-container">
+                                <img src="@enfants[i].ImageURL" alt="@enfants[i].Nom"
+                                 class="col mainImages voleurImg" style="width: 90%;">
+                            </div>
+                        </a> <!--MAGE-->
+                    </div>
+                   
+                }
+                 if (i % 3 == 2 || i == enfants.Count() - 1)
+                    {
+                        @:</div>
+                    }
             }
 
         </div>
+         <div class="col" style="margin:auto;">
+
+         </div>
 
 
         <div class="col-md-2 h-auto colRecherche d-none d-md-block ">
@@ -135,10 +178,9 @@
                 </label>
                 <br>
                 <div class="d-md-none d-xxl-block">
-                    <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <button type="submit" class="bouton"
-                                                                                                                  style="margin-left: 50px; background-color: cornflowerblue; ">
-                        Rechercher
-                    </button>
+                    <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> 
+                    <button type="submit" class="bouton" style="margin-left: 50px; background-color: cornflowerblue; "> Rechercher</button>
+                        
                 </div>
                 <div class=" d-md-block d-xxl-none">
                     <button type="reset" class="bouton" style="background-color: grey; ">Effacer</button> <br>

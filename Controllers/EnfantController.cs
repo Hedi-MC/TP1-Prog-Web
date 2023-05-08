@@ -30,45 +30,48 @@ namespace TP2_Skyrim.Controllers
         public IActionResult Filtrer(CritereRechercheViewModel criteres)
         {
             IEnumerable<Enfant> don = DB.Enfants;
+            List<Enfant> debug = new List<Enfant>();
 
            
-            if(criteres.MotsCles != null){ don = don.Where(e => e.Nom.Contains(criteres.MotsCles)); }//on check les mots clés
+            if(criteres.MotsCles != null){ don = don.Where(e => e.Nom.ToLower().Contains(criteres.MotsCles.ToLower())); }//on check les mots clés
 
-            //if (criteres.NbrCompMin != 0) { don = don.Where(e => e.NbrCompetences >= criteres.NbrCompMin); } //on check les nombres de skills min
+            if (criteres.NbrCompMin != null) { don = don.Where(e => e.NbrCompetences >= criteres.NbrCompMin); } //on check les nombres de skills min
 
-            //if (criteres.NbrCompMax != 0) { don = don.Where(e => e.NbrCompetences <= criteres.NbrCompMax); } //on check les nombres de skills max
-
-
-
-            //if (criteres.ChoixHabileteVedette == "oui")     //si on select oui, on check ceux qui sont true
-            //{
-            //    don = don.Where(e => e.Vedette == true);
-            //}
-            //else if (criteres.ChoixHabileteVedette == "non")    //si on select non, on check ceux qui sont false
-            //{
-            //    don = don.Where(e => e.Vedette == false);
-            //}
-           
+            if (criteres.NbrCompMax != null) { don = don.Where(e => e.NbrCompetences <= criteres.NbrCompMax); } //on check les nombres de skills max
 
 
-            //if (criteres.EstMage == true)                       //check si le parent est Mage
-            //{
-            //    don = don.Where(e => e.Parent.Nom == "Le Mage");
-            //}
 
-            //if (criteres.EstGuerrier == true)                   //check si le parent est Guerrier
-            //{
-            //    don = don.Where(e => e.Parent.Nom == "Le Guerrier");
-            //}
+            if (criteres.ChoixHabileteVedette == "oui")     //si on select oui, on check ceux qui sont true
+            {
+                don = don.Where(e => e.Vedette == true);
+            }
+            else if (criteres.ChoixHabileteVedette == "non")    //si on select non, on check ceux qui sont false
+            {
+                don = don.Where(e => e.Vedette == false);
+            }
 
-            //if (criteres.EstVoleur == true)                     //check si le parent est Voleur
-            //{
-            //    don = don.Where(e => e.Parent.Nom == "Le Voleur");
-            //}
+            List<Enfant> classes = new List<Enfant>(don);
 
+            
+            if (criteres.EstMage == true)                       //check si le parent est Mage
+            {
+                debug.AddRange(classes.Where(e => e.Parent.Nom == "Le Mage"));
+            }
+            
+
+            if (criteres.EstGuerrier == true)                   //check si le parent est Guerrier
+            {
+                debug.AddRange(classes.Where(e => e.Parent.Nom == "Le Guerrier"));
+            }
+            
+            if (criteres.EstVoleur == true)                     //check si le parent est Voleur
+            {
+                debug.AddRange(classes.Where(e => e.Parent.Nom == "Le Voleur"));
+            }
+            
             PageRechercheViewModel page=new PageRechercheViewModel();
             page.Criteres = criteres;
-            page.Resultat = don.ToList();
+            page.Resultat = debug;
 
             return View("Recherche",page);
 
