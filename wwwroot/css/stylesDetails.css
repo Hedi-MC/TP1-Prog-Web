@@ -88,7 +88,16 @@ html {
 }
 
 .mageText {
+    color: greenyellow;
+    text-decoration: dotted;
+    font-style: oblique;
 }
 
 .warriorText {
+    color: greenyellow;
+    text-decoration: dotted;
+    font-style: oblique;
+    color: greenyellow;
+    text-decoration: dotted;
+    font-style: oblique;
 }

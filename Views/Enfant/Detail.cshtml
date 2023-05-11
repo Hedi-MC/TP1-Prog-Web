@@ -1,4 +1,4 @@
-﻿@using TP2_Skyrim.Models
+﻿
 @model Enfant
 @*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -81,8 +81,9 @@
                 <p>Difficulté:</p>
             </div>
 
-
-            <div class="col-auto d-md-none d-lg-block colonnes texte h-100  thiefText">
+            @if (nomParent == "Mage")
+            {
+                <div class="col-auto d-md-none d-lg-block colonnes texte h-100 mageText">
                 <p>@Model.Nom</p> <!--Donner un input à ces dudes là-->
                 <p>@nomParent</p>
                 <p>@Model.TypeAbilite</p>
@@ -92,7 +93,37 @@
                 <p>@Model.Difficulté/10</p>
 
 
-            </div>
+                </div>
+            }
+            else if (nomParent=="Guerrier")
+            {
+                <div class="col-auto d-md-none d-lg-block colonnes texte h-100 warriorText">
+                <p>@Model.Nom</p> <!--Donner un input à ces dudes là-->
+                <p>@nomParent</p>
+                <p>@Model.TypeAbilite</p>
+                <p>@Model.NbrCompetences Compétences</p>
+                <p>@Model.UtilGen</p>
+                <p>@Model.NiveauDeRecommendation/10</p>
+                <p>@Model.Difficulté/10</p>
+
+
+                </div>
+            }
+            else if (nomParent=="Voleur")
+            {
+                <div class="col-auto d-md-none d-lg-block colonnes texte h-100 thiefText">
+                <p>@Model.Nom</p> <!--Donner un input à ces dudes là-->
+                <p>@nomParent</p>
+                <p>@Model.TypeAbilite</p>
+                <p>@Model.NbrCompetences Compétences</p>
+                <p>@Model.UtilGen</p>
+                <p>@Model.NiveauDeRecommendation/10</p>
+                <p>@Model.Difficulté/10</p>
+
+
+                </div>
+            }
+            
 
             <div class="col-auto d-block d-lg-none colonnes texte h-100 " style="font-size: 120% ">
                 <p>Nom de L'habileté:</p>

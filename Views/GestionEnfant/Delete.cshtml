@@ -1,0 +1,118 @@
+﻿@model Enfant
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "_Layout";
+}
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+
+<main class="container-fluid grandContainer mw-50 overflow-auto  h-auto"
+      style="background-color: rgba(0,0,0,.7); margin-bottom: 50px; ">
+    <link rel="stylesheet" href="~/css/sylesMAIN.css">
+    <!--Fond sujets principaux-->
+    @{
+        String nomParent = "";
+        if (@Model.ParentId == 1) { nomParent = "Mage"; }
+        else if (@Model.ParentId == 2) { nomParent = "Guerrier"; }
+        else if (@Model.ParentId == 3) { nomParent = "Voleur"; }
+        else { nomParent = "Classe non trouvée"; }
+
+    }
+
+    <h1>Supprimer</h1> <!--Titre Principal-->
+
+    <div class="container-fluid " style="border: 50px; border-color: brown; height: 100%;margin:30px; width:95%">
+
+
+
+
+        <h3 style="color:red">Voulez-vous vraiment supprimer cette habileté?</h3>
+        <div>
+
+            <h4>NOM: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>@Model.Nom </span></h4>
+            <br />
+            <h4>ID: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>N°@Model.EnfantId </span></h4>
+
+
+
+            <hr />
+
+            <div class="container detailBG" style="text-align:center; padding:30px;width:40%">
+                sadsadsa
+                <div id="carouselExample" class="carousel slide  " style="border: 2px; height: 100%; width: 100%;">
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active" style="">
+                            <div class="d-flex justify-content-center w-100">
+                                <img src="@Model.ImageURL" class="detailImage"
+                                     style="height:400px; text-align: center; background-color:black;" alt="...">
+                            </div>
+                        </div>
+
+
+                        <div class="carousel-item" style=" ">
+                            <div class="d-flex justify-content-center w-100">
+                                <img src="@Model.Image1Logo" class="detailImage"
+                                     style="height:400px; text-align: center;" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="carousel-item " style=" ">
+                            <div class="d-flex justify-content-center w-100">
+                                <img src="@Model.Image2SS" class="detailImage"
+                                     style="height:400px; text-align: center; border-radius: 10px;"
+                                     alt="Image du crochetage dans le jeu">
+                            </div>
+                        </div>
+                        <div class="carousel-item " style=" ">
+                            <div class="d-flex justify-content-center w-100">
+                                <img src="@Model.Image3Art" class="detailImage"
+                                     style="height:400px; text-align: center; border-radius: 10px;"
+                                     alt="Un argonien qui crochette une porte">
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+
+
+            </div>
+        </div>
+
+        INFOS:
+
+        <hr />
+        <form asp-action="Delete">
+            <input type="submit" value="Supprimer" class="btn btn-danger" />
+
+        </form>
+    </div>
+
+
+
+
+
+    </div>
+
+
+</main>
+
+
+
+

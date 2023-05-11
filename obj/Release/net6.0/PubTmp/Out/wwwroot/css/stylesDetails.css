@@ -1,0 +1,94 @@
+.header {
+    background-image: -webkit-linear-gradient(red, blue);
+}
+
+.menu {
+    overflow: hidden;
+    font-size: 20px;
+    max-width: 200px;
+}
+
+.menuSMALL {
+    border-color: blue;
+    text-align: center;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.corpMain {
+    background-image: url("../IMAGES/mainBG.jpg");
+    color: white;
+    font-family: monospace;
+    background-repeat: repeat;
+}
+
+
+.grandContainer {
+    margin-top: 50px;
+}
+
+.mainImages {
+    color: rgb(255, 255, 255);
+    border-color: blue;
+    border: 2px solid;
+    overflow: hidden;
+    max-height: 90vh;
+    max-width: 90vw;
+    width: 80%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.mainSubject {
+    color: rgb(255, 255, 255);
+    border-color: blue;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    overflow: hidden;
+}
+
+
+.logo {
+    width: 75px;
+    height: 75px;
+}
+
+html {
+    height: 100%;
+}
+
+.detailImage {
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.texte {
+    color: white;
+    overflow: hidden;
+    font-size: 20px;
+}
+
+.colonnes {
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.ligne {
+    height: 55%;
+}
+
+.detailBG {
+    background-color: rgba(57, 67, 95, 0.897);
+    border-radius: 10px;
+}
+
+.thiefText {
+    color: greenyellow;
+    text-decoration: dotted;
+    font-style: oblique;
+}
+
+.mageText {
+}
+
+.warriorText {
+}
