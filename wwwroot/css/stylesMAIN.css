@@ -89,3 +89,16 @@ a:visited {
 a:active {
     text-decoration: none;
 }
+body::-webkit-scrollbar {
+    width: 0.7em;
+    background: white;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #c0392b;
+    height: 30px;
+}
+
+body::-webkit-scrollbar-track-piece {
+    display: none;
+}

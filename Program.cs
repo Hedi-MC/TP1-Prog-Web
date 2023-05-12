@@ -6,6 +6,8 @@ builder.Services.AddControllersWithViews(); // Permet MVC
 builder.Services.AddRazorPages(); // Permet utilisation de Razor
 
 builder.Services.AddSingleton<Database>(); // Permet l'utilisation du Singleton
+builder.Services.AddDistributedMemoryCache(); // ? Permet l'utilisation de cookies
+builder.Services.AddSession(option => { option.IdleTimeout = TimeSpan.FromMinutes(20); }); // ? Configure l'expiration d'un cookies
 
 var app = builder.Build();
 
@@ -22,7 +24,10 @@ else
     app.UseStaticFiles();
 }
 
+// ? Permet l'utilisation de cookies
+app.UseSession();
 app.UseRouting();
+
 app.UseEndpoints(endpoints =>
 {
     endpoints.MapControllerRoute(

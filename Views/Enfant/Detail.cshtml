@@ -8,7 +8,7 @@
 }
 
 
-<main class="container-fluid grandContainer mw-50 overflow-auto  h-auto"
+<main class="container grandContainer mw-50 "
       style="background-color: rgba(0,0,0,.7); margin-bottom: 50px; ">
       <link rel="stylesheet" href="~/css/sylesMAIN.css">
     <!--Fond sujets principaux-->
@@ -21,10 +21,11 @@
 
     }
 
-    <h1>Détails de l'habileté</h1> <!--Titre Principal-->
+  
 
-    <div class="container-fluid  " style="border: 50px; border-color: brown; height: 100%;">
+    <div class="container  " style="border: 50px; border-color: brown;">
 
+        <h1>Détails de l'habileté</h1>
         <div class="row colonnes ligne overflow-hidden   ">
             <div class="col-md-7 col-lg-5 col-xl-4 detailBG">
 
@@ -155,8 +156,9 @@
 
         </div>
         <div class="row colonnes" style="width: 200px;">
-            <form action="https://www.w3schools.com/action_page.php" method="POST">
-                <input type="hidden" id="crochetage" name="crochetage" value="SR-skill-Lockpicking.png">
+            <form asp-action="AjouterUnEnfant"  asp-controller="Favoris" method="POST">
+                <input type="hidden" value="@Model.EnfantId" name="id">
+                
                 <button type="submit" style="background-color: cornflowerblue; color: white; font-size: xx-large;">
                     Favoris +
                 </button>
@@ -166,7 +168,7 @@
 
         </div>
         <h3>Description</h3>
-        <p style="height: 60ch;">@Model.Description</p>
+        <p style="height: 50ch; width:100%; font-size:125%; overflow:auto">@Model.Description @Model.Description @Model.Description</p>
     </div>
 
 

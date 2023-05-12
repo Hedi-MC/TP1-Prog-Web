@@ -4,6 +4,87 @@
 @{
     Layout = "_Layout";
 }
-<main>
-    <p>Une texte très temporaire. INDEX FAVORIS</p>
+<main class="container grandContainer mw-50   h-100" style="background-color: rgba(0,0,0,.7); margin-bottom: 50px; ">
+    <!--Fond sujets principaux-->
+
+    <h1>Habiletés Favorites</h1> <!--Titre Principal-->
+
+    <br />
+
+    
+
+    @{
+
+        List<Enfant> enfants = new List<Enfant>();
+
+        foreach (Enfant ef in Model)
+        {
+            enfants.Add(ef);
+        }
+
+        
+    }
+    <h3>Vous avez <span style="color:yellow; font-size:120%;font-weight:bolder">@enfants.Count() habiletés</span> favorites.</h3>
+
+
+    <div class="container  " style="border: 50px;">
+        <form asp-action ="SupprimerUnEnfant" method="POST">
+            <div class="table-responsive table-striped" style="color:white; height: 50%;">
+                <table class="table table-dark table-striped" style="color:white">
+                    <thead>
+                        <tr style="background-color: rgba(57, 67, 95, 0.897);">
+                            <th style="width:40% ;">Image</th>
+                            <th style="width:20% ;">Nom de l'habileté</th>
+                            <th style="width:20% ;">Classe</th>
+                            <th style="width:20% ;">Nombres de Compétences</th>
+                            <th style="width:20% ;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(Enfant ef in enfants)
+                        {
+                            <tr>
+
+                                <td>
+                                    <a href="/Enfant/Detail/@ef.EnfantId">
+                                        <img src="@ef.ImageURL" alt="@ef.Nom"
+                                         class="img-thumbnail imageFav @(ef.ParentId==1?"favMage":ef.ParentId==2?"favWarrior":"favThief")">
+                                    </a>
+                                </td>
+
+
+
+
+                                <td>@ef.Nom</td>
+                                <td>@ef.Parent.Nom.Replace("Le","")</td>
+                                <td>@ef.NbrCompetences</td>
+                                <td>
+                                    
+                                    <input type="hidden" value="@ef.EnfantId" name="id" class="btn btn-danger" style="font-size:3vh" /> <button type="submit" style="height:5vh; width:5vh" class="btn btn-outline-danger ">
+                                        <i class="fa-regular fa-trash-can fa-2xl" style="color: #ff7575;"></i>
+                                        </button>
+                                
+                                    
+                                </td>
+
+
+
+
+                            </tr>
+                        }
+                        
+
+                    </tbody>
+                </table>
+
+            </div>
+        </form>
+
+
+
+
+    </div>
+
+
+
 </main>
