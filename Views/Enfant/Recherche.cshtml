@@ -16,7 +16,7 @@
     <h1>Les Classes</h1> <!--Titre Principal-->
     <div class="row">
 
-
+      
 
 
         <div class="col-md-9 overflow-hidden align-self-start" style="border: 50px; background-color: rgba(2, 3, 5, 0.507);">
@@ -47,15 +47,20 @@
                     }
                 if (enfants[i].Parent.Nom=="Le Mage")
                 {
+
                     <div class="col-md mainSubject p-2 mage" >
-                        <a href="/Enfant/Detail/@enfants[i].EnfantId">
-                            <h1 style="margin-left: 22px; ">@enfants[i].Nom</h1>
-                            <h4 style="margin-left: 23px; color:white;">@enfants[i].NbrCompetences Compétences</h4>
-                            <div class="img-text-container">
+
+                            <div class="img-text-container" style="position:relative;">
+                                <a href="/Enfant/Detail/@enfants[i].EnfantId">
                                 <img src="@enfants[i].ImageURL" alt="@enfants[i].Nom"
-                                 class="col mainImages mageImg" style="width: 90%;">
+                                 class="col mainImages mageImg" style="width: 90%;" >
+                                 <h1 style="position: absolute; top: 7%; left: 35%; transform: translate(-50%, -50%); z-index: 1; width: 50%; height: auto;">@enfants[i].Nom</h1>
+                                    <h4 style="color:white;position: absolute; top: 12%; left: 36%; transform: translate(-50%, -50%); z-index: 1; width: 50%; height: auto;" >@enfants[i].NbrCompetences Compétences</h4>
+                                 </a>
+                                 <span ><button onclick="window.location.href='/GestionEnfant/Delete/@enfants[i].EnfantId'"  style="position: absolute; top: 9%; left: 85%; transform: translate(-50%, -50%); z-index: 1; width: 10%; height: 10%;"
+                                     class="btn btn-outline-danger "><i class="fa-regular fa-trash-can fa-2xl" style="color: #ff7575;"></i></button></span>
                             </div>
-                        </a> <!--MAGE-->
+                         <!--MAGE-->
                     </div>
                    
                 }
@@ -63,14 +68,16 @@
                 {
                     
                     <div class="col-md mainSubject p-2 guerrier">
-                        <a href="/Enfant/Detail/@enfants[i].EnfantId">
-                            <h1 style="margin-left: 22px;">@enfants[i].Nom</h1>
-                            <h4 style="margin-left: 23px; color:white;">@enfants[i].NbrCompetences Compétences</h4>
-                            <div class="img-text-container">
+                         <div class="img-text-container" style="position:relative;">
+                                <a href="/Enfant/Detail/@enfants[i].EnfantId">
                                 <img src="@enfants[i].ImageURL" alt="@enfants[i].Nom"
-                                 class="col mainImages guerrierImg" style="width: 90%;">
+                                 class="col mainImages guerrierImg hover-zoom" style="width: 90%;" >
+                                 <h1 style="position: absolute; top: 7%; left: 35%; transform: translate(-50%, -50%); z-index: 1; width: 50%; height: auto;">@enfants[i].Nom</h1>
+                                    <h4 style="color:white;position: absolute; top: 12%; left: 36%; transform: translate(-50%, -50%); z-index: 1; width: 50%; height: auto;" >@enfants[i].NbrCompetences Compétences</h4>
+                                 </a>
+                                 <span ><button onclick="window.location.href='/GestionEnfant/Delete/@enfants[i].EnfantId'"  style="position: absolute; top: 9%; left: 85%; transform: translate(-50%, -50%); z-index: 1; width: 10%; height: 10%;"
+                                     class="btn btn-outline-danger "><i class="fa-regular fa-trash-can fa-2xl" style="color: #ff7575;"></i></button></span>
                             </div>
-                        </a> <!--MAGE-->
                     </div>
                    
                 }
@@ -78,14 +85,16 @@
                 {
                     
                     <div class="col-md mainSubject p-2 voleur">
-                        <a href="/Enfant/Detail/@enfants[i].EnfantId">
-                            <h1 style="margin-left: 22px;">@enfants[i].Nom</h1>
-                            <h4 style="margin-left: 23px; color:white;">@enfants[i].NbrCompetences Compétences</h4>
-                            <div class="img-text-container">
+                         <div class="img-text-container" style="position:relative;">
+                                <a href="/Enfant/Detail/@enfants[i].EnfantId">
                                 <img src="@enfants[i].ImageURL" alt="@enfants[i].Nom"
-                                 class="col mainImages voleurImg" style="width: 90%;">
+                                 class="col mainImages voleurImg" style="width: 90%;" >
+                                 <h1 style="position: absolute; top: 7%; left: 35%; transform: translate(-50%, -50%); z-index: 1; width: 50%; height: auto;">@enfants[i].Nom</h1>
+                                    <h4 style="color:white;position: absolute; top: 12%; left: 36%; transform: translate(-50%, -50%); z-index: 1; width: 50%; height: auto;" >@enfants[i].NbrCompetences Compétences</h4>
+                                 </a>
+                                 <span ><button onclick="window.location.href='/GestionEnfant/Delete/@enfants[i].EnfantId'"  style="position: absolute; top: 9%; left: 85%; transform: translate(-50%, -50%); z-index: 1; width: 10%; height: 10%;"
+                                     class="btn btn-outline-danger "><i class="fa-regular fa-trash-can fa-2xl" style="color: #ff7575;"></i></button></span>
                             </div>
-                        </a> <!--MAGE-->
                     </div>
                    
                 }

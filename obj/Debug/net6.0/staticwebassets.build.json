@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UyLTaAAC1dJM55GJ0IreO/pWLGtep1mUZRbUwY1BJPM=",
+  "Hash": "QtZyjt6JUQlSIzPbEqFXI5P7JpFVIOgwy1nlSR/MbWc=",
   "Source": "TP2-Skyrim",
   "BasePath": "_content/TP2-Skyrim",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "TP2-Skyrim\\wwwroot",
       "Source": "TP2-Skyrim",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesDetails.css",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesDetails.css",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "css/stylesDetails.css",
       "AssetKind": "All",
@@ -34,10 +34,10 @@
       "OriginalItemSpec": "wwwroot\\css\\stylesDetails.css"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesFavoris.css",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesFavoris.css",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "css/stylesFavoris.css",
       "AssetKind": "All",
@@ -51,10 +51,10 @@
       "OriginalItemSpec": "wwwroot\\css\\stylesFavoris.css"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesLayout.css",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesLayout.css",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "css/stylesLayout.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\stylesLayout.css"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesMAIN.css",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesMAIN.css",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "css/stylesMAIN.css",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\css\\stylesMAIN.css"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesRecherche.css",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\css\\stylesRecherche.css",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "css/stylesRecherche.css",
       "AssetKind": "All",
@@ -102,10 +102,10 @@
       "OriginalItemSpec": "wwwroot\\css\\stylesRecherche.css"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\alteration ss.jfif",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\alteration ss.jfif",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/alteration ss.jfif",
       "AssetKind": "All",
@@ -119,10 +119,10 @@
       "OriginalItemSpec": "wwwroot\\images\\alteration ss.jfif"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\archery ss.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\archery ss.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/archery ss.jpg",
       "AssetKind": "All",
@@ -136,10 +136,10 @@
       "OriginalItemSpec": "wwwroot\\images\\archery ss.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\aurora-night-sky-trees-the-elder-scrolls-v-skyrim-4k-7n-1400x900.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\aurora-night-sky-trees-the-elder-scrolls-v-skyrim-4k-7n-1400x900.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/aurora-night-sky-trees-the-elder-scrolls-v-skyrim-4k-7n-1400x900.jpg",
       "AssetKind": "All",
@@ -153,10 +153,10 @@
       "OriginalItemSpec": "wwwroot\\images\\aurora-night-sky-trees-the-elder-scrolls-v-skyrim-4k-7n-1400x900.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\bloque ss.png",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\bloque ss.png",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/bloque ss.png",
       "AssetKind": "All",
@@ -170,10 +170,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bloque ss.png"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\crochetage.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\crochetage.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/crochetage.jpg",
       "AssetKind": "All",
@@ -187,10 +187,10 @@
       "OriginalItemSpec": "wwwroot\\images\\crochetage.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\destruction ss.png",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\destruction ss.png",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/destruction ss.png",
       "AssetKind": "All",
@@ -204,10 +204,10 @@
       "OriginalItemSpec": "wwwroot\\images\\destruction ss.png"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\fighter.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\fighter.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/fighter.jpg",
       "AssetKind": "All",
@@ -221,10 +221,10 @@
       "OriginalItemSpec": "wwwroot\\images\\fighter.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\illusion ss.png",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\illusion ss.png",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/illusion ss.png",
       "AssetKind": "All",
@@ -238,10 +238,10 @@
       "OriginalItemSpec": "wwwroot\\images\\illusion ss.png"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\logo.png",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\logo.png",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -255,10 +255,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\mage.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\mage.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/mage.jpg",
       "AssetKind": "All",
@@ -272,10 +272,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mage.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\mainBG.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\mainBG.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/mainBG.jpg",
       "AssetKind": "All",
@@ -289,10 +289,10 @@
       "OriginalItemSpec": "wwwroot\\images\\mainBG.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\meme.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\meme.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/meme.jpg",
       "AssetKind": "All",
@@ -306,10 +306,10 @@
       "OriginalItemSpec": "wwwroot\\images\\meme.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\restoration ss.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\restoration ss.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/restoration ss.jpg",
       "AssetKind": "All",
@@ -323,10 +323,10 @@
       "OriginalItemSpec": "wwwroot\\images\\restoration ss.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\sneak ss.jpeg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\sneak ss.jpeg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/sneak ss.jpeg",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\sneak ss.jpeg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\TEMP LOGO.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\TEMP LOGO.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/TEMP LOGO.jpg",
       "AssetKind": "All",
@@ -357,10 +357,10 @@
       "OriginalItemSpec": "wwwroot\\images\\TEMP LOGO.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\TEMP.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\TEMP.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/TEMP.jpg",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\images\\TEMP.jpg"
     },
     {
-      "Identity": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\thief.jpg",
+      "Identity": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\images\\thief.jpg",
       "SourceId": "TP2-Skyrim",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\2030719\\Desktop\\TP1-Prog-Web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Hedi\\Desktop\\TP1-Prog-Web\\wwwroot\\",
       "BasePath": "_content/TP2-Skyrim",
       "RelativePath": "images/thief.jpg",
       "AssetKind": "All",

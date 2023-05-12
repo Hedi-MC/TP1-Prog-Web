@@ -17,12 +17,12 @@
                 
                 ParentId = 1,
                 Nom = "Le Mage",
-                ImageURL = "./images/mage.jpg",
+                ImageURL = "/images/mage.jpg",
                 Description = "Le mage est la classe la plus flexible, elle contient plusieurs habiletés utile pour plusieurs utilisations. " +
                 "Le mage n'a pas besoin d'autres classes pour l'aider à réussir, mais il est difficile à améliorer. " +
                 "Il possède aussi l'habileté d'enchantement, qui le rend essentiel à n'importe quelle classe." +
                 "\n" + "\n" + "Il ne se spécialise dans rien, mais est très utile seul.",
-                CombatSkills = 3,
+                
                 UtilitySkills = 2,
                 UpgradeSkills = 1
             });
@@ -31,7 +31,7 @@
             {
                 ParentId = 2,
                 Nom = "Le Guerrier",
-                ImageURL = "./images/fighter.jpg",
+                ImageURL = "/images/fighter.jpg",
                 Description = "Le Guerrier excèle dans tout ce qui concèrne le combat et la défense. " +
                 "Il contient toutes les compétences de combat qui ne consistent pas de la magie. " +
                 "De plus, il comprend l'habileté du forgeron, ce qui est utile pour toute classe." +
@@ -45,7 +45,7 @@
             {
                 ParentId = 3,
                 Nom = "Le Voleur",
-                ImageURL = "./images/thief.jpg",
+                ImageURL = "/images/thief.jpg",
                 Description = "La classe du voleur possède plusieurs habiletés qui lui permet de mieux se faufiler, " +
                 "éviter les enemies ainsi que de comettre des actes criminels. " +
                 "Tout en ayant l'aptitude d'éviter ses répercussions." +
@@ -445,6 +445,11 @@
                 Image3Art = "https://images.uesp.net/2/28/LG-cardart-Cauldron_Keeper.png"
             });
 
+
+
+
+
+
             //Liaison objets Enfants aux Objets Parent
             foreach (var p in Parents)
             {
@@ -456,6 +461,11 @@
             {
                 e.Parent = Parents.Where(p => p.ParentId == e.ParentId).Single();
             }
+
+            int MageCombat= Enfants.Where(e => e.TypeAbilite == "Combat" && e.ParentId==1).Count();
+            Parents[0].CombatSkills = MageCombat; 
+
+
 
         }
 

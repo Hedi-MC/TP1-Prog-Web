@@ -17,86 +17,86 @@
             parents.Add(pr);
         }
     }
-
+    
     <div class="container-fluid overflow-hidden" style="border: 50px; border-color: brown;">
         <div class="row">
             @{
                 foreach (Parent pr in parents)
                 {
-                        @if(pr.Nom=="Le Mage")
+                            @if(pr.Nom=="Le Mage")
                     {
                         
                     
-                        <div class="col-md mainSubject p-2 leMage" style="text-decoration:none;">
-                            <a href="/Enfant/Recherche">
-                                
-                                
+                            <div class="col-md mainSubject p-2 leMage" style="text-decoration:none;">
+                                <a href="/Enfant/Recherche">
                                     
-                                
-                                <h1 style="margin-left: 15px;">@pr.Nom</h1>
-                                <img src="@pr.ImageURL" alt="@pr.Nom" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-                                <ul style="margin-left: 15px; margin-top: 5px;">
-                                    <li>Nombre de habileté de combat : @pr.CombatSkills</li>
-                                    <li>Nombre de habileté d'utilité : @pr.UtilitySkills</li>
-                                    <li>Nombre de habileté d'amélioration : @pr.UpgradeSkills</li>
-                                </ul>
-                                <p style="margin-left: 15px;">
-                                    @pr.Description
+                                    
+                                      
+                                    
+                                    <h1 style="margin-left: 15px;">@pr.Nom</h1>
+                                    <img src="@pr.ImageURL" alt="@pr.Nom" class="col mainImages" style="width: 90%;"> <!--MAGE-->
+                                    <ul style="margin-left: 15px; margin-top: 5px;">
+                                        <li>Nombre de habileté de combat : @pr.CombatSkills </li>
+                                        <li>Nombre de habileté d'utilité : @pr.UtilitySkills</li>
+                                        <li>Nombre de habileté d'amélioration : @pr.UpgradeSkills</li>
+                                    </ul>
+                                    <p style="margin-left: 15px;">
+                                        @pr.Description
 
-                                </p>
-                                
-                            </a>
-                        </div>
+                                    </p>
+                                    
+                                </a>
+                            </div>
                     }
-                        @if(pr.Nom=="Le Guerrier")
+                            @if(pr.Nom=="Le Guerrier")
                     {
                         
                     
-                        <div class="col-md mainSubject p-2 leGuerrier">
-                            <a href="/Enfant/Recherche">
-                                
-                                
+                            <div class="col-md mainSubject p-2 leGuerrier">
+                                <a href="/Enfant/Recherche">
                                     
-                                
-                                <h1 style="margin-left: 15px;">@pr.Nom</h1>
-                                <img src="@pr.ImageURL" alt="@pr.Nom" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-                                <ul style="margin-left: 15px; margin-top: 5px;">
-                                    <li>Nombre de habileté de combat : @pr.CombatSkills</li>
-                                    <li>Nombre de habileté d'utilité : @pr.UtilitySkills</li>
-                                    <li>Nombre de habileté d'amélioration : @pr.UpgradeSkills</li>
-                                </ul>
-                                <p style="margin-left: 15px;">
-                                    @pr.Description
+                                    
+                                        
+                                    
+                                    <h1 style="margin-left: 15px;">@pr.Nom</h1>
+                                    <img src="@pr.ImageURL" alt="@pr.Nom" class="col mainImages" style="width: 90%;"> <!--MAGE-->
+                                    <ul style="margin-left: 15px; margin-top: 5px;">
+                                        <li>Nombre de habileté de combat : @pr.CombatSkills</li>
+                                        <li>Nombre de habileté d'utilité : @pr.UtilitySkills</li>
+                                        <li>Nombre de habileté d'amélioration : @pr.UpgradeSkills</li>
+                                    </ul>
+                                    <p style="margin-left: 15px;">
+                                        @pr.Description
 
-                                </p>
-                                
-                            </a>
-                        </div>
+                                    </p>
+                                    
+                                </a>
+                            </div>
                     }
-                        @if(pr.Nom=="Le Voleur")
+                            @if(pr.Nom=="Le Voleur")
                     {
                         
                     
-                        <div class="col-md mainSubject p-2 leVoleur">
-                            <a href="/Enfant/Recherche">
-                                
-                                
+                            <div class="col-md mainSubject p-2 leVoleur">
+                                <a href="/Enfant/Recherche">
                                     
-                                
-                                <h1 style="margin-left: 15px;">@pr.Nom</h1>
-                                <img src="@pr.ImageURL" alt="@pr.Nom" class="col mainImages" style="width: 90%;"> <!--MAGE-->
-                                <ul style="margin-left: 15px; margin-top: 5px;">
-                                    <li>Nombre de habileté de combat : @pr.CombatSkills</li>
-                                    <li>Nombre de habileté d'utilité : @pr.UtilitySkills</li>
-                                    <li>Nombre de habileté d'amélioration : @pr.UpgradeSkills</li>
-                                </ul>
-                                <p style="margin-left: 15px;">
-                                    @pr.Description
+                                    
+                                        
+                                    
+                                    <h1 style="margin-left: 15px;">@pr.Nom</h1>
+                                    <img src="@pr.ImageURL" alt="@pr.Nom" class="col mainImages" style="width: 90%;"> <!--MAGE-->
+                                    <ul style="margin-left: 15px; margin-top: 5px;">
+                                        <li>Nombre de habileté de combat : @pr.CombatSkills</li>
+                                        <li>Nombre de habileté d'utilité : @pr.UtilitySkills</li>
+                                        <li>Nombre de habileté d'amélioration : @pr.UpgradeSkills</li>
+                                    </ul>
+                                    <p style="margin-left: 15px;">
+                                        @pr.Description
 
-                                </p>
-                                
-                            </a>
-                        </div>
+                                    </p>
+                                    
+                                </a>
+                            </div>
                     }
 
 

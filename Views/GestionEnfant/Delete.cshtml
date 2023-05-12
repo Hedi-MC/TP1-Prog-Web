@@ -43,7 +43,7 @@
             <hr />
 
             <div class="container detailBG" style="text-align:center; padding:30px;width:40%">
-                sadsadsa
+                
                 <div id="carouselExample" class="carousel slide  " style="border: 2px; height: 100%; width: 100%;">
                     <div class="carousel-inner">
 
@@ -94,14 +94,39 @@
 
             </div>
         </div>
-
-        INFOS:
-
         <hr />
-        <form asp-action="Delete">
-            <input type="submit" value="Supprimer" class="btn btn-danger" />
+        <div class="row detailBG" >
 
-        </form>
+            <div class="col h-100">
+            <h3>INFOS:</h3>
+
+            <h5>Classe: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>@nomParent </span></h5>
+     
+            <h5>Nombre de compétences: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>@Model.NbrCompetences </span></h5>
+
+            <h5>Type d'habileté: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>@Model.TypeAbilite </span></h5>
+
+            <h5>Utilité générale: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>@Model.UtilGen </span></h5>
+
+            <h5>Difficulté: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>@Model.Difficulté/10 </span></h5>
+
+            <h5>Niveau de recommendation: <span class=@(Model.ParentId==1?"mageText":@Model.ParentId==2?"warriorText":"thiefText")>@Model.NiveauDeRecommendation/10 </span></h5>
+            </div>
+
+            <div class="col d-flex justify-content-center align-items-center">
+                <form asp-action="Delete">
+                    <input type="submit" value="Supprimer" class="btn btn-danger" style="font-size:3vh" />
+                </form>
+            </div>
+
+            <div class="col">
+                <h3>DESCRIPTION:</h3>
+                <p style="overflow:auto; max-height:20vh">@Model.Description</p>
+            </div>
+
+        </div>
+        <hr />
+       
     </div>
 
 
